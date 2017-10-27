@@ -27,13 +27,11 @@
    1. Typography
    ========================================================================== */
 
-h2 {
-  font-family: $font-family-sans-serif;
-  font-weight: 300;
-  color: theme-color("primary");
+h1, h2, h4, h4, h5, h6 {
+  b {
+    font-weight: 700;
+  }
 }
-h4, h5, h6 {
-  letter-spacing: 0.0375rem;
-  font-family: $font-family-sans-serif;
-  text-transform: uppercase
+h5, h6 {
+  font-weight: 400;
 }

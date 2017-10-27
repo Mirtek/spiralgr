@@ -201,9 +201,9 @@ $font-family-sans-serif: 'Montserrat', -apple-system, BlinkMacSystemFont, "Segoe
 $font-family-monospace:  Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 $font-family-base:       $font-family-sans-serif !default;
 
-$font-size-base: .875rem !default; // 14px (14/16)
-$font-size-lg:   1rem !default; // 16px
-$font-size-sm:   .75 !default; // 12px (12/16)
+$font-size-base: 1 !default; // 16px
+$font-size-lg:   1.125rem !default; // 18px (18/16)
+$font-size-sm:   .875 !default; // 14px (14/16)
 
 $font-weight-normal: normal !default;
 $font-weight-bold: bold !default;
@@ -211,20 +211,20 @@ $font-weight-bold: bold !default;
 $font-weight-base: $font-weight-normal !default;
 $line-height-base: 1.5 !default;
 
-$h1-font-size: 2.25rem !default; // 36px
-$h2-font-size: 1.875rem !default; // 30px
-$h3-font-size: 1.5rem !default; // 24px
-$h4-font-size: $font-size-base !default; // 14px
-$h5-font-size: $font-size-sm !default; // 12px
-$h6-font-size: $font-size-sm !default; // 12px
+$h1-font-size: 4.0625rem !default; // 65px
+$h2-font-size: 4.0625rem !default; // 65px
+$h3-font-size: 2.8125rem !default; // 45px
+$h4-font-size: 1.6875rem !default; // 27px
+$h5-font-size: $font-size-lg !default; // 18px
+$h6-font-size: $font-size-base !default; // 16px
 
 $headings-margin-bottom: ($spacer / 2) !default;
 $headings-font-family:   inherit !default;
-$headings-font-weight:   400 !default;
+$headings-font-weight:   300 !default;
 $headings-line-height:   1.1 !default;
-$headings-color:         inherit !default;
+$headings-color:         $gray-700 !default;
 
-$display1-size: 5rem !default;
+$display1-size: 7.375rem !default; // 118px
 $display2-size: 4rem !default;
 $display3-size: 3rem !default;
 $display4-size: 2rem !default;
