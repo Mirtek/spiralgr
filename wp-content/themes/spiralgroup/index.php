@@ -67,19 +67,35 @@
 		<div class="content-wrapper clearfix">
 			<div class="column-1 clearfix">
 				<div class="row-1">
-				1
+					<div class="backing"></div>
+					<div class="cards-title">
+						<p>200 +</p>
+						<p>Clients</p>
+					</div>
 				</div>
 				<div class="row-2">
-				2
+					<div class="backing"></div>
+					<div class="cards-title">						
+						<p>$5+ Billion</p> 
+						<p>Valuations/</p> 
+						<p>Acquisitions/</p>
+						<p>IPO Exists</p>
+					</div>
 				</div>
 			</div>
 			<div class="column-margin"></div>
 			<div class="column-2">
-			2
+				<div class="column-title">
+					We make emerging technology companies <span>matter.</span>
+				</div>
+				<div class="column-description">
+					Guiding them from obscurity to industry leadership and high market valuation.
+				</div>
 			</div>
 			<div class="column-margin"></div>
 			<div class="column-3">
-			3
+				<div class="backing"></div>
+			<!-- 3 -->
 			</div>
 		</div>
 	</section>	
@@ -91,29 +107,43 @@
 			<div class="column-1 clearfix">
 				<div class="row-1 clearfix">
 					<div class="sub-column-1">
-						1
+						<div class="backing"></div>
+						<div class="cards-title">
+							Branding
+						</div>
 					</div>
 					<div class="sub-column-margin"></div>
 					<div class="sub-column-2">
-						2
+						<div class="backing"></div>
+						<div class="cards-title">
+							Public Relations
+						</div>
 					</div>
 				</div>
 				<div class="row-2">
-					2
+					<div class="title">
+
+					</div>
+					<div class="description">
+
+					</div>
 				</div>
 			</div>
 			<div class="column-margin"></div>
 			<div class="column-2 clearfix">
 				<div class="row-1 clearfix">
 					<div class="sub-column-1">
+						<div class="backing"></div>
 						1
 					</div>
 					<div class="sub-column-margin"></div>
 					<div class="sub-column-2">
+						<div class="backing"></div>
 						2
 					</div>
 				</div>
 				<div class="row-2">
+					<div class="backing"></div>
 					2
 				</div>
 			</div>
@@ -123,6 +153,7 @@
 	
 	<section class="play-video-section">
 		<div class="content-wrapper clearfix">
+			<div class="backing"></div>
 			<i class="ico fa fa-play-circle-o" aria-hidden="true"></i>
 		</div>
 	</section>
@@ -130,7 +161,7 @@
 	<!-- testimonials-section start -->
 	<section class="testimonials-section">
 		<div class="content-wrapper">
-			<div class="container">
+			<div class="custom-container">
 				<div class="title">
 					Testimonials
 				</div>
@@ -162,6 +193,41 @@
 			<div class="title">
 				Select Clients
 			</div>
+			<div class="clients-list">
+				<div class="clients-row">
+					<div class="clients-item">
+						1
+					</div>
+					<div class="clients-item">
+						2
+					</div>
+					<div class="clients-item">
+						3
+					</div>
+				</div>
+				<div class="clients-row">
+					<div class="clients-item">
+						1
+					</div>
+					<div class="clients-item">
+						2
+					</div>
+					<div class="clients-item">
+						3
+					</div>
+				</div>
+				<div class="clients-row">
+					<div class="clients-item">
+						1
+					</div>
+					<div class="clients-item">
+						2
+					</div>
+					<div class="clients-item">
+						3
+					</div>
+				</div>
+			</div>
 		</div>
 	</section>
 	<!-- select-clients-section end -->
@@ -171,6 +237,32 @@
 		<div class="content-wrapper">
 			<div class="title">
 				Insights from SpiralGroup Team
+			</div>
+			<div class="insight-list">
+				<div class="insight-item">
+					<div class="backing"></div>
+					<div class="title">
+						1
+					</div>
+				</div>
+				<div class="insight-item">	
+					<div class="backing"></div>				
+					<div class="title">
+						2
+					</div>
+				</div>
+				<div class="insight-item">
+					<div class="backing"></div>
+					<div class="title">
+						3
+					</div>
+				</div>
+				<div class="insight-item">
+					<div class="backing"></div>
+					<div class="title">
+						4
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
