@@ -54,11 +54,78 @@
 	</header>
 	<!-- header end -->
 
+	<!-- first section start -->
 	<section class="first-section">
 		<h1 class="content">
 			Go from unknown to <span>indespensible.</span>
 		</h1>
 	</section>	
+	<!-- first section end -->
+
+	<!-- we-make section start -->
+	<section class="we-make-section">
+		<div class="content-wrapper clearfix">
+			<div class="column-1 clearfix">
+				<div class="row-1">
+				1
+				</div>
+				<div class="row-2">
+				2
+				</div>
+			</div>
+			<div class="column-margin"></div>
+			<div class="column-2">
+			2
+			</div>
+			<div class="column-margin"></div>
+			<div class="column-3">
+			3
+			</div>
+		</div>
+	</section>	
+	<!-- we-make section end -->
+
+	<!-- grounded-in section start -->
+	<section class="grounded-in-section">
+		<div class="content-wrapper clearfix">
+			<div class="column-1 clearfix">
+				<div class="row-1 clearfix">
+					<div class="sub-column-1">
+						1
+					</div>
+					<div class="sub-column-margin"></div>
+					<div class="sub-column-2">
+						2
+					</div>
+				</div>
+				<div class="row-2">
+					2
+				</div>
+			</div>
+			<div class="column-margin"></div>
+			<div class="column-2 clearfix">
+				<div class="row-1 clearfix">
+					<div class="sub-column-1">
+						1
+					</div>
+					<div class="sub-column-margin"></div>
+					<div class="sub-column-2">
+						2
+					</div>
+				</div>
+				<div class="row-2">
+					2
+				</div>
+			</div>
+		</div>
+	</section>	
+	<!-- grounded-in section end -->
+	
+	<section class="play-video-section">
+		<div class="content-wrapper clearfix">
+			<i class="ico fa fa-play-circle-o" aria-hidden="true"></i>
+		</div>
+	</section>
 
 	<!-- testimonials-section start -->
 	<section class="testimonials-section">

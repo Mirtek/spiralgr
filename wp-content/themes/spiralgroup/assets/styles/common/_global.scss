@@ -65,7 +65,7 @@ h5, h6 {
 
 
 .content-wrapper {
-  padding: 0 9.5%;
+  margin: 0 9.5%;
 }
 
 body {
@@ -75,7 +75,6 @@ body {
   background-color: #fff;
 }
 
->>>>>>> 0755fb081cbc6a3b0cfc35cf4c62e70ef9fa2a85
 * {
   box-sizing: border-box;
 }
@@ -111,8 +110,4 @@ h1, h2, h3, p {
   content: "";
   display: table;
   clear: both;
-}
-
-.content-wrapper {
-  padding: 0 9.5%;
 }
