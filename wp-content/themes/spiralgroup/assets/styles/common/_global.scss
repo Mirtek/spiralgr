@@ -35,3 +35,40 @@ h1, h2, h4, h4, h5, h6 {
 h5, h6 {
   font-weight: 400;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+button {
+  outline: none;
+  border: none;
+  background-color: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul, li {
+  text-decoration: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.content-wrapper {
+  padding: 0 9.5%;
+}
