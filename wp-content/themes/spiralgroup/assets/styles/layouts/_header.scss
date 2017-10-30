@@ -1,0 +1,67 @@
+// header start ------------------->
+header {
+    min-height: 160px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    .content-wrapper {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .logo-container {
+        display: flex;
+        align-items: center;
+        .logo {
+          width: 260px;
+          height: 90px;
+          display: inline-block;
+          margin-right: 20px;
+          background-image: url('../images/logo-default.png');
+          background-position: top left;
+          background-size: 100% 100%;
+          background-repeat: no-repeat;
+        }
+        .slogan {
+          display: inline-block;
+          color: #818486;
+          padding-left: 20px;
+          border-left: 1px solid #818486;
+        }
+      }
+      .menu-button {
+        color: #f68a2e;
+        cursor: pointer;
+        .ico {
+          font-size: 20px;
+        }
+      }
+    }
+    .menu-block {
+      display: none;
+      width: 430px;
+      height: 735px;
+      padding: 180px 154px 0 0;
+      position: absolute;
+      z-index: 2;
+      top: 0;
+      right: 0;
+      background-color: #cfcfcf;
+      .menu-block-close-btn {
+        font-size: 28px;
+        position: absolute;
+        top: 80px;
+        right: 150px;
+        color: #fff;
+        cursor: pointer;
+      }
+      .menu-item {
+        text-align: right;
+        margin-bottom: 42px;
+        color: #fff;
+        font-size: 30px;
+        cursor: pointer;
+      }
+    }
+  }
+  // header end ------------------->

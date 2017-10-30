@@ -35,3 +35,78 @@ h1, h2, h4, h4, h5, h6 {
 h5, h6 {
   font-weight: 400;
 }
+
+// Responsive design media queries
+// -Mobile first principle-
+@mixin tablet {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin large-laptop {
+  @media (min-width: 1750px) {
+    @content;
+  }
+}
+// -Mobile first principle END-
+
+// ============ end of media queries ==============
+// ============== fonts ==========================
+
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,700,700i");
+// ============== end of fonts =======================
+
+
+.content-wrapper {
+  padding: 0 9.5%;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;  
+  box-sizing: border-box;
+  min-width: 320px;
+  background-color: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button {
+  outline: none;
+  border: none;
+  background-color: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  &:hover {
+    text-decoration: none !important;
+  }
+}
+
+ul, li {
+  text-decoration: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
