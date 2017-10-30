@@ -19,6 +19,15 @@
     'common': {
       init: function() {
         // JavaScript to be fired on all pages
+        console.log('document ready!');
+        
+        $('.menu-button').click(function() {
+          console.log('menu-button click!');
+          $('.menu-block').toggle();
+        });
+        $('.menu-block-close-btn').click(function() {
+            $('.menu-block').toggle();
+        });
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired
@@ -64,16 +73,6 @@
       $.each(document.body.className.replace(/-/g, '_').split(/\s+/), function(i, classnm) {
         UTIL.fire(classnm);
         UTIL.fire(classnm, 'finalize');
-      });
-
-      console.log('document ready!');
-      
-      $('.menu-button').click(function() {
-        console.log('menu-button click!');
-        $('.menu-block').toggle();
-      });
-      $('.menu-block-close-btn').click(function() {
-          $('.menu-block').toggle();
       });
 
       // Fire common finalize JS
