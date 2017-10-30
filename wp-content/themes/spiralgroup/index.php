@@ -66,14 +66,14 @@
 	<section class="we-make-section">
 		<div class="content-wrapper clearfix">
 			<div class="column-1 clearfix">
-				<div class="row-1">
+				<div class="row-1 card-item">
 					<div class="backing"></div>
 					<div class="cards-title">
 						<p>200 +</p>
 						<p>Clients</p>
 					</div>
 				</div>
-				<div class="row-2">
+				<div class="row-2 card-item">
 					<div class="backing"></div>
 					<div class="cards-title">						
 						<p>$5+ Billion</p> 
@@ -93,7 +93,7 @@
 				</div>
 			</div>
 			<div class="column-margin"></div>
-			<div class="column-3">
+			<div class="column-3 card-item">
 				<div class="backing"></div>
 			<!-- 3 -->
 			</div>
@@ -106,14 +106,14 @@
 		<div class="content-wrapper clearfix">
 			<div class="column-1 clearfix">
 				<div class="row-1 clearfix">
-					<div class="sub-column-1">
+					<div class="sub-column-1 card-item">
 						<div class="backing"></div>
 						<div class="cards-title">
 							Branding
 						</div>
 					</div>
 					<div class="sub-column-margin"></div>
-					<div class="sub-column-2">
+					<div class="sub-column-2 card-item">
 						<div class="backing"></div>
 						<div class="cards-title">
 							Public Relations
@@ -132,17 +132,17 @@
 			<div class="column-margin"></div>
 			<div class="column-2 clearfix">
 				<div class="row-1 clearfix">
-					<div class="sub-column-1">
+					<div class="sub-column-1 card-item">
 						<div class="backing"></div>
 						1
 					</div>
 					<div class="sub-column-margin"></div>
-					<div class="sub-column-2">
+					<div class="sub-column-2 card-item">
 						<div class="backing"></div>
 						2
 					</div>
 				</div>
-				<div class="row-2">
+				<div class="row-2 card-item">
 					<div class="backing"></div>
 					2
 				</div>
