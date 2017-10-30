@@ -78,16 +78,6 @@
 
       // Fire common finalize JS
       UTIL.fire('common', 'finalize');
-
-      console.log('document ready!');
-      
-      $('.menu-button').click(function() {
-          console.log('menu-button click!');
-          $('.menu-block').toggle();
-      });
-      $('.menu-block-close-btn').click(function() {
-          $('.menu-block').toggle();
-      });
     }
   };
 
