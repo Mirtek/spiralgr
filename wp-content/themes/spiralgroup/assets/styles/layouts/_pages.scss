@@ -78,11 +78,16 @@
     color: $spiralgroup-orange;
     font-weight: normal;
     padding: 0 3vw 0 6.5vw;
-    width: 75vw;
-    
+    width: 85vw;
+    @include laptop {
+      width: 75vw;
+    }
     .main-title {
-      font-size: 7.1vw;  
-      line-height: 0.9;    
+      font-size: 8.1vw;  
+      line-height: 0.9;   
+      @include laptop {
+        font-size: 7.1vw;
+      } 
       &>span {
         font-weight: bold;
         // display: block;
@@ -95,16 +100,23 @@
       margin-left: 0.5vw;    
       margin-top: 1vw;
       .our-clients-title {
-        font-size: 2.1vw; 
+        font-size: 3.1vw; 
         font-weight: 100; 
+        @include laptop {          
+          font-size: 2.1vw; 
+        }
       }
       .our-clients-logo-list {
         background-image: url("../images/our-clients.png");
         background-repeat: no-repeat;
         background-position: top left;
         background-size: auto 100%;
-        height: 3.7vw;
+        height: 4.7vw;
         margin-top: 0.2vw;
+        @include laptop {          
+          height: 3.7vw;
+          margin-top: 0.2vw;
+        }
       }
     }
   }
