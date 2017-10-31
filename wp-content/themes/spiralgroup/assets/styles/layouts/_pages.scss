@@ -33,9 +33,18 @@
   line-height: 50px;
   font-weight: 100;
 }
+// @for $i from 0 through 100 {
+//   @media (min-width: 1200px+($i * 8)) {
+//     .cards-title {
+//       $size: 120px + ($i );  
+//       font-size: $size;
+//     }
+//   }
+// }
 .card-item {
 
 }
+
 // first-section start ------------------->
 .first-section {
   background-image: url('../images/sample-image.jpg');
