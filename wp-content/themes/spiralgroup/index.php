@@ -56,7 +56,7 @@
 
 	<!-- first section start -->
 	<section class="first-section">
-		<h1 class="content col-md-10 col-sm-10">
+		<h1 class="content col-xs-10">
 			Go from unknown to <span>indespensible.</span>
 		</h1>
 	</section>	
@@ -247,25 +247,25 @@
 				<div class="insight-item">
 					<div class="backing"></div>
 					<div class="title">
-						1
+						4 Misconceptions That Keep You From Great PR
 					</div>
 				</div>
 				<div class="insight-item">	
 					<div class="backing"></div>				
 					<div class="title">
-						2
+						4 Misconceptions That Keep You From Great PR
 					</div>
 				</div>
 				<div class="insight-item">
 					<div class="backing"></div>
 					<div class="title">
-						3
+						4 Misconceptions That Keep You From Great PR
 					</div>
 				</div>
 				<div class="insight-item">
 					<div class="backing"></div>
 					<div class="title">
-						4
+						4 Misconceptions That Keep You From Great PR
 					</div>
 				</div>
 			</div>

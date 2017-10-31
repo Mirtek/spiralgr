@@ -46,28 +46,51 @@ header {
     }
     .menu-block {
       display: none;
-      width: 430px;
-      height: 735px;
-      padding: 180px 154px 0 0;
       position: absolute;
       z-index: 2;
       top: 0;
       right: 0;
       background-color: #cfcfcf;
+      width: 280px;
+      height: 400px;
+      padding: 80px 89px 0 0;
+      @include tablet {        
+        width: 430px;
+        height: 635px;
+        padding: 180px 154px 0 0;
+      }
+      @include laptop {        
+        width: 430px;
+        height: 735px;
+        padding: 180px 154px 0 0;
+      }
       .menu-block-close-btn {
         font-size: 28px;
         position: absolute;
-        top: 80px;
-        right: 150px;
         color: #fff;
         cursor: pointer;
+        top: 22px;
+        right: 30px;
+        @include tablet {          
+          top: 80px;
+          right: 150px;
+        }
       }
       .menu-item {
         text-align: right;
-        margin-bottom: 42px;
         color: #fff;
-        font-size: 30px;
         cursor: pointer;
+        font-size: 20px;
+        margin-bottom: 22px;
+        @include tablet {
+          font-size: 30px;
+          margin-bottom: 27px;
+
+        }
+        @include laptop {
+          font-size: 30px;
+          margin-bottom: 42px;
+        }
       }
     }
   }
