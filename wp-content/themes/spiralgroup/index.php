@@ -218,8 +218,8 @@
 			</div>
 			<div class="clients-list">
 				<div class="clients-item">
-					<div class="company-logo">
-						1
+					<div class="company-logo company-1">
+						
 					</div>
 					<div class="hover-description">
 						<p class="value">
@@ -243,8 +243,8 @@
 					</div>
 				</div>
 				<div class="clients-item">
-					<div class="company-logo">
-						1
+					<div class="company-logo company-2">
+						
 					</div>
 					<div class="hover-description">
 						<p class="value">
@@ -268,8 +268,8 @@
 					</div>
 				</div>
 				<div class="clients-item">
-					<div class="company-logo">
-						1
+					<div class="company-logo company-3">
+						
 					</div>
 					<div class="hover-description">
 						<p class="value">
@@ -293,8 +293,8 @@
 					</div>
 				</div>
 				<div class="clients-item">
-					<div class="company-logo">
-						1
+					<div class="company-logo company-4">
+						
 					</div>
 					<div class="hover-description">
 						<p class="value">
@@ -318,8 +318,8 @@
 					</div>
 				</div>
 				<div class="clients-item">						
-					<div class="company-logo">
-						1
+					<div class="company-logo company-5">
+						
 					</div>
 					<div class="hover-description">
 						<p class="value">
@@ -343,8 +343,8 @@
 					</div>
 				</div>
 				<div class="clients-item">
-					<div class="company-logo">
-						1
+					<div class="company-logo company-6">
+						
 					</div>
 					<div class="hover-description">
 						<p class="value">
@@ -368,8 +368,8 @@
 					</div>
 				</div>
 				<div class="clients-item">
-					<div class="company-logo">
-						1
+					<div class="company-logo company-7">
+						
 					</div>
 					<div class="hover-description">
 						<p class="value">
@@ -393,8 +393,8 @@
 					</div>
 				</div>
 				<div class="clients-item">						
-					<div class="company-logo">
-						1
+					<div class="company-logo company-8">
+						
 					</div>
 					<div class="hover-description">
 						<p class="value">
@@ -418,8 +418,8 @@
 					</div>
 				</div>
 				<div class="clients-item">						
-					<div class="company-logo">
-						1
+					<div class="company-logo company-9">
+						
 					</div>
 					<div class="hover-description">
 						<p class="value">
