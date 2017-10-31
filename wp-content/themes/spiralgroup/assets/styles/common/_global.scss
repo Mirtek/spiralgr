@@ -65,7 +65,10 @@ h5, h6 {
 
 
 .content-wrapper {
-  margin: 0 9.5%;
+  margin: 0 5%;
+  @include laptop {
+    margin: 0 9.5%;
+  }
 }
 
 body {

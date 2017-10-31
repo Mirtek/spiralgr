@@ -56,7 +56,7 @@
 
 	<!-- first section start -->
 	<section class="first-section">
-		<h1 class="content">
+		<h1 class="content col-md-10 col-sm-10">
 			Go from unknown to <span>indespensible.</span>
 		</h1>
 	</section>	
@@ -73,6 +73,7 @@
 						<p>Clients</p>
 					</div>
 				</div>
+				<div class="row-margin"></div>
 				<div class="row-2 card-item">
 					<div class="backing"></div>
 					<div class="cards-title">						
@@ -102,7 +103,7 @@
 	<!-- we-make section end -->
 
 	<!-- grounded-in section start -->
-	<section class="grounded-in-section">
+	<section class="grounded-in-section clearfix">
 		<div class="content-wrapper clearfix">
 			<div class="column-1 clearfix">
 				<div class="row-1 clearfix">
@@ -122,10 +123,10 @@
 				</div>
 				<div class="row-2">
 					<div class="title">
-
+						Grounded in data and market <span>intelligence.</span>
 					</div>
 					<div class="description">
-
+						Enhanced by deep industry expertise and experience, we make your brand brilliant by illuminating your value to key stakeholders.
 					</div>
 				</div>
 			</div>
@@ -134,12 +135,16 @@
 				<div class="row-1 clearfix">
 					<div class="sub-column-1 card-item">
 						<div class="backing"></div>
-						1
+						<div class="cards-title">
+							Social Engagement
+						</div>
 					</div>
 					<div class="sub-column-margin"></div>
 					<div class="sub-column-2 card-item">
 						<div class="backing"></div>
-						2
+						<div class="cards-title">
+							Marketing Management
+						</div>
 					</div>
 				</div>
 				<div class="row-2 card-item">
@@ -283,7 +288,7 @@
 					<p>Suite 777</p>
 					<p>San Francisco, CA 94107</p>
 					<p>415-869-8579</p>
-					<p>info@spiralgroup.com</p>
+					<p class="email"><a href="mailto:info@spiralgroup.com">info@spiralgroup.com</a></p>
 				</div>
 			</div>
 			<div class="footer-menu-container">

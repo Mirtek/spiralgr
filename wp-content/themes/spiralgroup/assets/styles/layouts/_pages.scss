@@ -29,9 +29,15 @@
   z-index: 1;
 }
 .cards-title {
-  font-size: 40px;
-  line-height: 50px;
+  position: relative;
+  z-index: 1;
+  font-size: 30px;
+  line-height: 40px;
   font-weight: 100;
+  @include laptop {
+    font-size: 40px;
+    line-height: 50px;
+  }
 }
 // @for $i from 0 through 100 {
 //   @media (min-width: 1200px+($i * 8)) {
@@ -41,8 +47,12 @@
 //     }
 //   }
 // }
-.card-item {
-
+.card-item {  
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 7%;
 }
 
 // first-section start ------------------->
@@ -55,19 +65,24 @@
   position: relative;
   .content {
     display: inline-block;
-    width: 78%;
     min-height: 50%;
     position: absolute;
     top: 0;
     left: 0;
     background-color: #f1f1f1;
-    padding: 107px 0 78px 9.5vw;
+    padding: 57px 20px 58px 6.5vw;
     color: $spiralgroup-orange;
-    font-size: 118px;
+    font-size: 82px;
+    line-height: 86px;
     font-weight: normal;
-    line-height: 102px;
+    @include laptop {      
+      font-size: 118px;
+      line-height: 102px;
+      padding: 107px 20px 78px 9.5vw;
+    }
     &>span {
       font-weight: bold;
+      // display: block;
     }
   }
 }
@@ -99,17 +114,16 @@
       width: 27.6%;
       .row-1,
       .row-2 {
-        height: 48%;
+        height: 48.5%; //48%;
         background-color: rgba($color: $gray-600, $alpha: 0.7);
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
         padding: 0 10%;
         position: relative;
       }
+      .row-margin {
+        height: 3%;
+      }
       .row-1 {
-        margin-bottom: 6%;   
+        // margin-bottom: 6%;   
         background-position: top left;
         background-size: 100% 100%;
         background-repeat: no-repeat;
@@ -121,14 +135,16 @@
         background-size: 100% 100%;
         background-repeat: no-repeat;
         background-image: url('../images/sample-image.jpg');
-        position: relative;
-        
+        position: relative;        
       }
     }
     .column-2 {
       width: 47.9%;
       background-color: $spiralgroup-teal;
       padding: 5%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       .column-title {
         font-size: 54px;
         font-weight: 100;
@@ -138,7 +154,10 @@
         }
       }
       .column-description {
-
+        font-size: 22px;
+        line-height: 30px;
+        font-weight: 100;
+        margin-top: 20px;
       }
     }
     .column-3 {
@@ -159,16 +178,22 @@
 .grounded-in-section {
   margin-top: 70px;
   .content-wrapper {
-    min-height: 50vw;
-    height: 1px;
+    @include laptop {
+      min-height: 50vw;
+      height: 1px;
+    }
     .column-1,
     .column-2 {
       color: #fff;
-      display: inline-block;
-      height: 100%;
-      vertical-align: top;
-      float: left;
-      width: 49.2%;
+      display: block;
+      @include laptop {
+        display: inline-block;
+        float: left;
+        width: 49.2%;
+        min-height: 100%;
+        vertical-align: top;
+        height: 1px;
+      }
     }
     .column-margin {
       display: inline-block;
@@ -177,21 +202,26 @@
       float: left;      
       position: relative;
     }
-    .column-1 {
-      min-height: 100%;
-      height: 1px;
+    .column-1 {    
+      margin-bottom: 4%;
+      height: 80vw;
+      @include laptop {
+        margin: 0;
+        min-height: 100%;
+        height: 1px;
+      }
       .row-1 {
         margin-bottom: 4%;
-        height: 30.5%;
+        height: 40.5%;
+        @include laptop {          
+          height: 30.5%;
+        }
         .sub-column-1,
         .sub-column-2 {
           height: 100%;
           float: left;
           background-color: $spiralgroup-teal;
           width: 48%;
-          display: flex;
-          align-items: center;
-          padding: 10%;
           font-size: 44px;
           font-weight: 100;
           line-height: 60px;
@@ -209,50 +239,74 @@
           background-repeat: no-repeat;
           background-image: url('../images/sample-image.jpg');
         }
-        .sub-column-margin {
+        .sub-column-margin {      
+          display: block;
           float: left;
           width: 4%;
-          height: 100%;
+          height: 1px;
+          @include laptop {
+            height: 100%;
+          }
         }
       }
       .row-2 {
         background-color: $spiralgroup-green;
-        height: 66.5%;
+        height: 55.5%;
         position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 10%;
+        @include laptop {
+          height: 66.5%;
+        }
+        .title {
+          font-size: 54px;
+          font-weight: 100;
+          line-height: 68px;
+          &>span {
+            font-weight: bold;
+          }
+        }
+        .description {
+          font-weight: 100;
+          font-size: 22px;
+          line-height: 30px;
+          margin-top: 20px;
+        }
       }
     }
     .column-2 {
-      min-height: 100%;
-      height: 1px;
-      .row-2 {
-        padding: 10%;
-        display: flex;
-        align-items: center;
+      display: block;
+      height: 100vw;
+      @include laptop {
+        min-height: 100%;
+        height: 1px;
       }
       .row-1 {
-        margin-bottom: 4%;
-        height: 58.5%;
-
+        height: 50%;
+        @include laptop {
+          margin-bottom: 4%;
+          height: 58.5%;
+        }
         .sub-column-1,
         .sub-column-2 {
           height: 100%;
           float: left;
           background-color: $spiralgroup-teal;
           width: 48%;
-          display: flex;
-          align-items: center;
           position: relative;
-        }
-        .sub-column-1 {          
           background-position: top center;
-          background-size: auto 100%;
+          background-size: 100% 100%;
           background-repeat: no-repeat;
+          @include laptop {
+            background-size: auto 100%;
+          }
+        }
+        .sub-column-1 {
           background-image: url('../images/sample-image.jpg');
         }
         .sub-column-2 {
-          background-position: top center;
-          background-size: auto 100%;
-          background-repeat: no-repeat;
           background-image: url('../images/sample-image.jpg');
         }
         .sub-column-margin {
@@ -261,14 +315,19 @@
           height: 100%;
         }
       }
-      .row-2 {
+      .row-2 { 
+        margin-top: 4%;
+        height: 46%;    
         background-color: $spiralgroup-teal;
-        height: 38.5%;
         background-position: top left;
         background-size: 100% 100%;
         background-repeat: no-repeat;
         background-image: url('../images/sample-image.jpg');
-				position: relative;
+        position: relative;
+        @include laptop {    
+          margin-top: 0;      
+          height: 38.5%;
+        }
       }
     }
   }
@@ -306,27 +365,56 @@
   .content-wrapper {
     .custom-container  {
       background-color: $spiralgroup-green;
-      padding: 65px 130px 70px;
+      padding: 25px 15px 20px;
+      @include tablet {
+        padding: 55px 40px 50px;
+      }
+      @include laptop {
+        padding: 65px 130px 70px;
+      }
       .title {
         text-align: center;
         font-weight: 100;
-        font-size: 65px;
-        margin-bottom: 42px;
+        font-size: 25px;
+        margin-bottom: 10px;
+        @include tablet {          
+          font-size: 45px;
+          margin-bottom: 35px;
+        }
+        @include laptop {
+          font-size: 65px;
+          margin-bottom: 42px;
+        }
       }
       .content {
-        font-size: 39px;
         font-weight: 100;
-        margin-bottom: 60px;
+        font-size: 16px;
+        margin-bottom: 15px;
+        @include tablet {
+          font-size: 29px;
+          margin-bottom: 45px;
+        }
+        @include laptop {
+          font-size: 39px;
+          margin-bottom: 60px;
+          
+        }
       }
       .author-container {
-        margin-bottom: 20px;
-        .author {
+        font-weight: 100;
+        margin-bottom: 5px;
+        font-size: 19px;
+        @include tablet {
+          margin-bottom: 15px;
+          font-size: 29px;
+        }
+        @include laptop {
           font-size: 39px;
-          font-weight: 100;
+          margin-bottom: 20px;          
+        }
+        .author {
         }
         .position {
-          font-size: 39px;
-          font-weight: 100;
           font-style: italic;
         }
       }
@@ -387,9 +475,14 @@
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
-      .insight-item {
-        width: 23.5%;
-        height: 13vw;        
+      flex-wrap: wrap;
+      @include laptop {
+        flex-wrap: nowrap;
+      }
+      .insight-item {    
+        width: 48.5%;
+        height: 27vw;      
+        margin-bottom: 3%;  
         background-position: top left;
         background-size: 100% 100%;
         background-repeat: no-repeat;
@@ -402,6 +495,11 @@
         transition: 0.2s;
         cursor: pointer;
         position: relative;
+        @include laptop {
+          width: 23.5%;
+          height: 13vw;   
+          margin-bottom: 0;
+        }
         &:hover {
           .title {
             display: block;

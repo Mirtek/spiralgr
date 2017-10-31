@@ -6,27 +6,45 @@
 // footer start ------------------->
 footer {
   background-color: #d3d3d3;
-  height: 1px;
+  height: auto;
   min-height: 384px;
   padding-top: 55px;
-  .content-wrapper {
-    height: 100%;
+  @include laptop {    
+    height: 1px;
   }
-  .logo-container {    
-    display: inline-block;
+  .content-wrapper {
+    height: auto;
+    padding-bottom: 40px;
+    @include laptop { 
+      height: 100%;
+      padding-bottom: 0;
+    }
+  }
+  .logo-container {   
+    display: block; 
     width: 236px;
-    height: 100%;
+    height: 83px;
     background-image: url('../images/logo-white.png');
     background-position: top left;
     background-size: 100% auto;
     background-repeat: no-repeat;
+    @include laptop {      
+      display: inline-block;
+      height: 100%;
+    }
   }
   .contact-us-container {
-    vertical-align: top;
-    display: inline-block;
+    display: block;
     height: 100%;
     color: #4b4b4b;
-    margin-left: 75px;
+    margin-left: 0;
+    @include tablet {  
+      display: inline-block;
+      vertical-align: top;
+    }  
+    @include laptop {      
+      margin-left: 75px;
+    }
     .title {
       color: #4b4b4b;
       font-weight: bold;
@@ -38,13 +56,26 @@ footer {
         font-size: 20px;
         line-height: 33px;
       }
+      .email {
+        display: inline-block;
+        border-bottom: 1px solid #4b4b4b;
+        line-height: 25px;
+        &>a {
+          &:hover {
+            border-color: #4b4b4b;
+            color: #4b4b4b;
+          }
+        }
+      }
     }
   }
   .footer-menu-container {
     vertical-align: top;
     display: inline-block;
     height: 100%;
-    margin-left: 75px;
+    @include tablet {      
+      margin-left: 75px;
+    }
     .menu {
       .menu-item {
         margin-bottom: 30px;
@@ -59,7 +90,7 @@ footer {
   .footer-social-links-container {
     vertical-align: top;
     display: inline-block;
-    height: 100%;
+    height: 100%;  
     margin-left: 75px;
     .social-links {
       .social-links-item {
