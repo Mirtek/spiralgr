@@ -99,7 +99,12 @@
         font-weight: 100; 
       }
       .our-clients-logo-list {
-        
+        background-image: url("../images/our-clients.png");
+        background-repeat: no-repeat;
+        background-position: top left;
+        background-size: auto 100%;
+        height: 3.7vw;
+        margin-top: 0.2vw;
       }
     }
   }
