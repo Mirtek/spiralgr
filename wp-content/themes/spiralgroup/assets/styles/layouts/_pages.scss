@@ -32,27 +32,26 @@
   position: relative;
   z-index: 1;
   font-size: 30px;
-  line-height: 40px;
+  line-height: 1.25;
   font-weight: 100;
   @include laptop {
     font-size: 40px;
-    line-height: 50px;
   }
 }
-// @for $i from 0 through 100 {
-//   @media (min-width: 1200px+($i * 8)) {
-//     .cards-title {
-//       $size: 120px + ($i );  
-//       font-size: $size;
-//     }
-//   }
-// }
 .card-item {  
+  cursor: pointer;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
   padding: 7%;
+  transition: $transition-time;
+  &:hover {
+    .backing,
+    .cards-title {
+      display: none;
+    }
+  }
 }
 
 // first-section start ------------------->
@@ -143,17 +142,20 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
+      &:hover {
+        background-color: $spiralgroup-green;
+      }
       .column-title {
         font-size: 54px;
         font-weight: 100;
-        line-height: 68px;
+        line-height: 1.25;
         &>span {
           font-weight: bold;
         }
       }
       .column-description {
         font-size: 22px;
-        line-height: 30px;
+        line-height: 1.36;
         font-weight: 100;
         margin-top: 20px;
       }
@@ -222,7 +224,7 @@
           width: 48%;
           font-size: 44px;
           font-weight: 100;
-          line-height: 60px;
+          line-height: 1.36;
           position: relative;
         }
         .sub-column-1 {          
@@ -258,19 +260,28 @@
         @include laptop {
           height: 66.5%;
         }
+        &:hover {
+          background-color: $spiralgroup-orange;
+        }
         .title {
-          font-size: 54px;
+          font-size: 6vw;
           font-weight: 100;
-          line-height: 68px;
+          line-height: 1.25;
+          @include tablet {            
+            font-size: 54px;
+          }
           &>span {
             font-weight: bold;
           }
         }
         .description {
           font-weight: 100;
-          font-size: 22px;
-          line-height: 30px;
+          font-size: 5vw;
+          line-height: 1.35;
           margin-top: 20px;
+          @include laptop {            
+            font-size: 22px;
+          }
         }
       }
     }
@@ -454,6 +465,37 @@
           flex-direction: row;
           justify-content: center;
           align-items: center;
+          cursor: pointer;
+          position: relative;
+          transition: $transition-time;
+          &:hover,
+          &:active {
+            .hover-description {
+              display: flex;
+            }
+          }
+          .hover-description {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: $spiralgroup-teal;
+            color: #fff;
+            font-weight: 100;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .value {
+              font-size: 3vw;    
+              line-height: 1;
+            }
+            .desc {
+              font-size: 1.4vw;
+              margin-bottom: 1vw;
+            }
+          }
         }
       }
     }
@@ -498,7 +540,7 @@
         justify-content: center;
         align-items: center;
         color: #fff;
-        transition: 0.2s;
+        transition: $transition-time;
         padding: 5%;
         cursor: pointer;
         position: relative;
