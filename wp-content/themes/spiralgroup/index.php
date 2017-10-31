@@ -57,7 +57,17 @@
 	<!-- first section start -->
 	<section class="first-section">
 		<h1 class="content col-xs-10">
-			Go from unknown to <span>indespensible.</span>
+			<div class="main-title">
+				Go from unknown to <span>indespensible.</span>
+			</div>
+			<div class="our-clients-container">
+				<div class="our-clients-title">
+					We helped our clients’ technology become part of 
+				</div>
+				<div class="our-clients-logo-list">
+					
+				</div>
+			</div>
 		</h1>
 	</section>	
 	<!-- first section end -->
@@ -66,7 +76,7 @@
 	<section class="we-make-section">
 		<div class="content-wrapper clearfix">
 			<div class="column-1 clearfix">
-				<div class="row-1 card-item">
+				<div class="row-1 card-item clients">
 					<div class="backing"></div>
 					<div class="cards-title">
 						<p>200 +</p>
@@ -74,7 +84,7 @@
 					</div>
 				</div>
 				<div class="row-margin"></div>
-				<div class="row-2 card-item">
+				<div class="row-2 card-item valuations">
 					<div class="backing"></div>
 					<div class="cards-title">						
 						<p>$5+ Billion</p> 
@@ -85,7 +95,7 @@
 				</div>
 			</div>
 			<div class="column-margin"></div>
-			<div class="column-2">
+			<div class="column-2 we-make">
 				<div class="column-title">
 					We make emerging technology companies <span>matter.</span>
 				</div>
@@ -94,7 +104,7 @@
 				</div>
 			</div>
 			<div class="column-margin"></div>
-			<div class="column-3 card-item">
+			<div class="column-3 card-item continents">
 				<div class="backing"></div>
 				<div class="cards-title">
 					6
@@ -111,21 +121,21 @@
 		<div class="content-wrapper clearfix">
 			<div class="column-1 clearfix">
 				<div class="row-1 clearfix">
-					<div class="sub-column-1 card-item">
+					<div class="sub-column-1 card-item branding">
 						<div class="backing"></div>
 						<div class="cards-title">
 							Branding
 						</div>
 					</div>
 					<div class="sub-column-margin"></div>
-					<div class="sub-column-2 card-item">
+					<div class="sub-column-2 card-item relations">
 						<div class="backing"></div>
 						<div class="cards-title">
 							Public Relations
 						</div>
 					</div>
 				</div>
-				<div class="row-2">
+				<div class="row-2 grounded">
 					<div class="title">
 						Grounded in data and market <span>intelligence.</span>
 					</div>
@@ -137,23 +147,27 @@
 			<div class="column-margin"></div>
 			<div class="column-2 clearfix">
 				<div class="row-1 clearfix">
-					<div class="sub-column-1 card-item">
+					<div class="sub-column-1 card-item social">
 						<div class="backing"></div>
 						<div class="cards-title">
 							Social Engagement
 						</div>
 					</div>
 					<div class="sub-column-margin"></div>
-					<div class="sub-column-2 card-item">
+					<div class="sub-column-2 card-item marketing">
 						<div class="backing"></div>
 						<div class="cards-title">
 							Marketing Management
 						</div>
 					</div>
 				</div>
-				<div class="row-2 card-item">
+				<div class="row-2 card-item digital-marketing">
 					<div class="backing"></div>
-					1
+					<div class="cards-title">					
+						Digital
+						<br/>
+						Marketing
+					</div>
 				</div>
 			</div>
 		</div>
@@ -203,217 +217,229 @@
 				Select Clients
 			</div>
 			<div class="clients-list">
-				<div class="clients-row">
-					<div class="clients-item">
+				<div class="clients-item">
+					<div class="company-logo">
 						1
-						<div class="hover-description">
-							<p class="value">
-								5500
-							</p>
-							<p class="desc">
-								articles in one week
-							</p>
-							<p class="value">
-								3
-							</p>
-							<p class="desc">
-								months from rebrand to bidding war
-							</p>
-							<p class="value">
-								$2.4B
-							</p>
-							<p class="desc">
-								aquisition
-							</p>
-						</div>
 					</div>
-					<div class="clients-item">
-						2
-						<div class="hover-description">
-							<p class="value">
-								5500
-							</p>
-							<p class="desc">
-								articles in one week
-							</p>
-							<p class="value">
-								3
-							</p>
-							<p class="desc">
-								months from rebrand to bidding war
-							</p>
-							<p class="value">
-								$2.4B
-							</p>
-							<p class="desc">
-								aquisition
-							</p>
-						</div>
-					</div>
-					<div class="clients-item">
-						3
-						<div class="hover-description">
-							<p class="value">
-								5500
-							</p>
-							<p class="desc">
-								articles in one week
-							</p>
-							<p class="value">
-								3
-							</p>
-							<p class="desc">
-								months from rebrand to bidding war
-							</p>
-							<p class="value">
-								$2.4B
-							</p>
-							<p class="desc">
-								aquisition
-							</p>
-						</div>
+					<div class="hover-description">
+						<p class="value">
+							5500
+						</p>
+						<p class="desc">
+							articles in one week
+						</p>
+						<p class="value">
+							3
+						</p>
+						<p class="desc">
+							months from rebrand to bidding war
+						</p>
+						<p class="value">
+							$2.4B
+						</p>
+						<p class="desc">
+							aquisition
+						</p>
 					</div>
 				</div>
-				<div class="clients-row">
-					<div class="clients-item">
+				<div class="clients-item">
+					<div class="company-logo">
 						1
-						<div class="hover-description">
-							<p class="value">
-								5500
-							</p>
-							<p class="desc">
-								articles in one week
-							</p>
-							<p class="value">
-								3
-							</p>
-							<p class="desc">
-								months from rebrand to bidding war
-							</p>
-							<p class="value">
-								$2.4B
-							</p>
-							<p class="desc">
-								aquisition
-							</p>
-						</div>
 					</div>
-					<div class="clients-item">
-						2
-						<div class="hover-description">
-							<p class="value">
-								5500
-							</p>
-							<p class="desc">
-								articles in one week
-							</p>
-							<p class="value">
-								3
-							</p>
-							<p class="desc">
-								months from rebrand to bidding war
-							</p>
-							<p class="value">
-								$2.4B
-							</p>
-							<p class="desc">
-								aquisition
-							</p>
-						</div>
-					</div>
-					<div class="clients-item">
-						3
-						<div class="hover-description">
-							<p class="value">
-								5500
-							</p>
-							<p class="desc">
-								articles in one week
-							</p>
-							<p class="value">
-								3
-							</p>
-							<p class="desc">
-								months from rebrand to bidding war
-							</p>
-							<p class="value">
-								$2.4B
-							</p>
-							<p class="desc">
-								aquisition
-							</p>
-						</div>
+					<div class="hover-description">
+						<p class="value">
+							5500
+						</p>
+						<p class="desc">
+							articles in one week
+						</p>
+						<p class="value">
+							3
+						</p>
+						<p class="desc">
+							months from rebrand to bidding war
+						</p>
+						<p class="value">
+							$2.4B
+						</p>
+						<p class="desc">
+							aquisition
+						</p>
 					</div>
 				</div>
-				<div class="clients-row">
-					<div class="clients-item">
+				<div class="clients-item">
+					<div class="company-logo">
 						1
-						<div class="hover-description">
-							<p class="value">
-								5500
-							</p>
-							<p class="desc">
-								articles in one week
-							</p>
-							<p class="value">
-								3
-							</p>
-							<p class="desc">
-								months from rebrand to bidding war
-							</p>
-							<p class="value">
-								$2.4B
-							</p>
-							<p class="desc">
-								aquisition
-							</p>
-						</div>
 					</div>
-					<div class="clients-item">
-						2
-						<div class="hover-description">
-							<p class="value">
-								5500
-							</p>
-							<p class="desc">
-								articles in one week
-							</p>
-							<p class="value">
-								3
-							</p>
-							<p class="desc">
-								months from rebrand to bidding war
-							</p>
-							<p class="value">
-								$2.4B
-							</p>
-							<p class="desc">
-								aquisition
-							</p>
-						</div>
+					<div class="hover-description">
+						<p class="value">
+							5500
+						</p>
+						<p class="desc">
+							articles in one week
+						</p>
+						<p class="value">
+							3
+						</p>
+						<p class="desc">
+							months from rebrand to bidding war
+						</p>
+						<p class="value">
+							$2.4B
+						</p>
+						<p class="desc">
+							aquisition
+						</p>
 					</div>
-					<div class="clients-item">
-						3
-						<div class="hover-description">
-							<p class="value">
-								5500
-							</p>
-							<p class="desc">
-								articles in one week
-							</p>
-							<p class="value">
-								3
-							</p>
-							<p class="desc">
-								months from rebrand to bidding war
-							</p>
-							<p class="value">
-								$2.4B
-							</p>
-							<p class="desc">
-								aquisition
-							</p>
-						</div>
+				</div>
+				<div class="clients-item">
+					<div class="company-logo">
+						1
+					</div>
+					<div class="hover-description">
+						<p class="value">
+							5500
+						</p>
+						<p class="desc">
+							articles in one week
+						</p>
+						<p class="value">
+							3
+						</p>
+						<p class="desc">
+							months from rebrand to bidding war
+						</p>
+						<p class="value">
+							$2.4B
+						</p>
+						<p class="desc">
+							aquisition
+						</p>
+					</div>
+				</div>
+				<div class="clients-item">						
+					<div class="company-logo">
+						1
+					</div>
+					<div class="hover-description">
+						<p class="value">
+							5500
+						</p>
+						<p class="desc">
+							articles in one week
+						</p>
+						<p class="value">
+							3
+						</p>
+						<p class="desc">
+							months from rebrand to bidding war
+						</p>
+						<p class="value">
+							$2.4B
+						</p>
+						<p class="desc">
+							aquisition
+						</p>
+					</div>
+				</div>
+				<div class="clients-item">
+					<div class="company-logo">
+						1
+					</div>
+					<div class="hover-description">
+						<p class="value">
+							5500
+						</p>
+						<p class="desc">
+							articles in one week
+						</p>
+						<p class="value">
+							3
+						</p>
+						<p class="desc">
+							months from rebrand to bidding war
+						</p>
+						<p class="value">
+							$2.4B
+						</p>
+						<p class="desc">
+							aquisition
+						</p>
+					</div>
+				</div>
+				<div class="clients-item">
+					<div class="company-logo">
+						1
+					</div>
+					<div class="hover-description">
+						<p class="value">
+							5500
+						</p>
+						<p class="desc">
+							articles in one week
+						</p>
+						<p class="value">
+							3
+						</p>
+						<p class="desc">
+							months from rebrand to bidding war
+						</p>
+						<p class="value">
+							$2.4B
+						</p>
+						<p class="desc">
+							aquisition
+						</p>
+					</div>
+				</div>
+				<div class="clients-item">						
+					<div class="company-logo">
+						1
+					</div>
+					<div class="hover-description">
+						<p class="value">
+							5500
+						</p>
+						<p class="desc">
+							articles in one week
+						</p>
+						<p class="value">
+							3
+						</p>
+						<p class="desc">
+							months from rebrand to bidding war
+						</p>
+						<p class="value">
+							$2.4B
+						</p>
+						<p class="desc">
+							aquisition
+						</p>
+					</div>
+				</div>
+				<div class="clients-item">						
+					<div class="company-logo">
+						1
+					</div>
+					<div class="hover-description">
+						<p class="value">
+							5500
+						</p>
+						<p class="desc">
+							articles in one week
+						</p>
+						<p class="value">
+							3
+						</p>
+						<p class="desc">
+							months from rebrand to bidding war
+						</p>
+						<p class="value">
+							$2.4B
+						</p>
+						<p class="desc">
+							aquisition
+						</p>
 					</div>
 				</div>
 			</div>
