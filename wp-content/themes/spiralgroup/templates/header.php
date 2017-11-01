@@ -24,13 +24,13 @@
       <div class="menu-button">
         <i class="ico fa fa-bars" aria-hidden="true"></i>
       </div>
-    </div> 
-      <?php wp_nav_menu(); ?>
-    <ul class="menu-block">
+    </div>
+    <div class="menu-block">
       <div class="menu-block-close-btn">
         <i class="fa fa-times" aria-hidden="true"></i>
-      </div>
-      <li class="menu-item">
+      </div>      
+      <?php wp_nav_menu(); ?>
+      <!-- <li class="menu-item">
         <a href="">Services</a>
       </li>
       <li class="menu-item">
@@ -44,6 +44,6 @@
       </li>
       <li class="menu-item">
         <a href="">Contact Us</a>
-      </li>
-    </ul> 
+      </li> -->
+    </div> 
   </header>
