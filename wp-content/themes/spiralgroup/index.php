@@ -21,7 +21,7 @@
 		<div class="content-wrapper">
 			<div class="logo-container">
 				<div class="logo">
-					
+					<a href=""></a>
 				</div>
 				<div class="slogan">
 					Brand Marketing For Emerging Technology Companies
@@ -36,19 +36,19 @@
 				<i class="fa fa-times" aria-hidden="true"></i>
 			</div>
 			<li class="menu-item">
-				Services
+				<a href="">Services</a>
 			</li>
 			<li class="menu-item">
-				Results
+				<a href="">Results</a>
 			</li>
 			<li class="menu-item">
-				About Us
+				<a href="">About Us</a>
 			</li>
 			<li class="menu-item">
-				Insights
+				<a href="">Insights</a>
 			</li>
 			<li class="menu-item">
-				Contact Us
+				<a href="">Contact Us</a>
 			</li>
 		</ul>	
 	</header>
@@ -530,7 +530,7 @@
 	<footer>
 		<div class="content-wrapper">
 			<div class="logo-container">
-
+				<a href=""></a>
 			</div>
 			<div class="contact-us-container">
 				<div class="title">
