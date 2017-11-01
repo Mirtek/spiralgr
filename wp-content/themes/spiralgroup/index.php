@@ -204,6 +204,7 @@
 					<div class="position">
 						President,  Agency Management Institute
 					</div>
+					<div class="logo"></div>
 				</div>
 			</div>
 		</div>

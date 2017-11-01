@@ -69,11 +69,10 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: 50%;
+    min-height: 55%;
     position: absolute;
     top: 0;
     left: 0;
-    padding: 0 20px 0 6.5vw;
     background-color: #f1f1f1;
     color: $spiralgroup-orange;
     font-weight: normal;
@@ -462,7 +461,7 @@
       background-color: $spiralgroup-green;
       padding: 25px 15px 20px;
       @include tablet {
-        padding: 65px 10% 70px;
+        padding: 3.7vw 10% 3.7vw;
       }
       .title {
         text-align: center;
@@ -498,6 +497,14 @@
         }
         .position {
           font-style: italic;
+        }
+        .logo {
+          margin-top: 1.5vw;
+          height: 3vw;
+          background-repeat: no-repeat;
+          background-position: top left;
+          background-size: auto 100%;
+          background-image: url("../images/agency-managment.png");
         }
       }
     }
