@@ -1,4 +1,5 @@
-<header class="banner">
+<?php use Roots\Sage\Assets; ?>
+<!--<header class="banner">
   <div class="container">
     <a class="brand" href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
     <nav class="nav-primary">
@@ -9,4 +10,40 @@
       ?>
     </nav>
   </div>
-</header>
+</header>-->
+<header>
+    <div class="content-wrapper">
+      <div class="logo-container">
+        <div class="logo">
+          <a href=""></a>
+        </div>
+        <div class="slogan">
+          Brand Marketing For Emerging Technology Companies
+        </div>
+      </div>
+      <div class="menu-button">
+        <i class="ico fa fa-bars" aria-hidden="true"></i>
+      </div>
+    </div> 
+      <?php wp_nav_menu(); ?>
+    <ul class="menu-block">
+      <div class="menu-block-close-btn">
+        <i class="fa fa-times" aria-hidden="true"></i>
+      </div>
+      <li class="menu-item">
+        <a href="">Services</a>
+      </li>
+      <li class="menu-item">
+        <a href="">Results</a>
+      </li>
+      <li class="menu-item">
+        <a href="">About Us</a>
+      </li>
+      <li class="menu-item">
+        <a href="">Insights</a>
+      </li>
+      <li class="menu-item">
+        <a href="">Contact Us</a>
+      </li>
+    </ul> 
+  </header>
