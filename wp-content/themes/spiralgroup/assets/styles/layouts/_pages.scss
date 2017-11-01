@@ -31,7 +31,7 @@
 .cards-title {
   position: relative;
   z-index: 1;
-  font-size: 30px;
+  font-size: 7vw;
   line-height: 1.25;
   font-weight: 100;
   @include laptop {
@@ -125,7 +125,10 @@
 
 // we-make start ----------------------->
 .we-make-section {
-  margin-top: 70px;
+  margin-top: 40px;
+  @include tablet {
+    margin-top: 70px;
+  }
   .content-wrapper {
     min-height: 33vw;
     @include tablet {
@@ -157,7 +160,7 @@
         background-color: rgba($color: $gray-600, $alpha: 0.7);
         padding: 0 10%;
         position: relative;
-        margin-bottom: 5vw;
+        margin-bottom: 20px;
         @include tablet {
           margin-bottom: 0;
           height: 48.5%;
@@ -167,7 +170,6 @@
         height: 3%;
       }
       .row-1.clients {
-        // margin-bottom: 6%;   
         background-position: top left;
         background-size: 100% 100%;
         background-repeat: no-repeat;
@@ -190,7 +192,7 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      margin-bottom: 5vw;
+      margin-bottom: 20px;
       @include tablet {
         height: 100%;
         width: 47.9%;
@@ -247,7 +249,10 @@
 
 // grounded-in start ----------------------->
 .grounded-in-section {
-  margin-top: 70px;
+  margin-top: 40px;
+  @include tablet {
+    margin-top: 70px;
+  }
   .content-wrapper {
     @include laptop {
       min-height: 50vw;
@@ -427,7 +432,10 @@
 
 // play-video start ----------------->
 .play-video-section {
-  margin-top: 70px;
+  margin-top: 40px;
+  @include tablet {
+    margin-top: 70px;
+  }
   .content-wrapper {
     min-height: 45vw;
     background-position: top left;
@@ -454,8 +462,11 @@
 
 // testimonials-section start ---------------->
 .testimonials-section {
-  margin-top: 64px;
+  margin-top: 34px;
   color: #fff;
+  @include tablet {
+    margin-top: 64px;
+  }
   .content-wrapper {
     .custom-container  {
       background-color: $spiralgroup-green;
@@ -500,11 +511,14 @@
         }
         .logo {
           margin-top: 1.5vw;
-          height: 3vw;
+          height: 5.5vw;
           background-repeat: no-repeat;
           background-position: top left;
           background-size: auto 100%;
           background-image: url("../images/agency-managment.png");
+          @include tablet {            
+            height: 3vw;
+          }
         }
       }
     }
@@ -514,7 +528,10 @@
 
 // select-clients-section start ---------------->
 .select-clients-section {
-  margin-top: 85px;
+  margin-top: 45px;
+  @include tablet {
+    margin-top: 85px
+  }
   .content-wrapper {
     min-height: 81vw;
     .title {
@@ -644,8 +661,12 @@
 
 // insight-from-section start ---------------->
 .insight-from-section {
-  margin-top: 85px;
-  margin-bottom: 90px;
+  margin-top: 45px;
+  margin-bottom: 50px;
+  @include tablet {
+    margin-top: 85px;
+    margin-bottom: 90px;
+  }
   .content-wrapper {
     .title {
       text-align: center;
