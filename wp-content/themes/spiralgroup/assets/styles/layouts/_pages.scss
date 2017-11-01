@@ -233,12 +233,13 @@
       background-repeat: no-repeat;
       background-image: url('../images/sample-image.jpg');
       cursor: pointer;
-      position: relative;
-      padding: 2%;
+      position: relative;    
+      padding: 8%;
       flex-direction: column;
       align-items: flex-start;
       justify-content: flex-end;
       @include tablet {
+        padding: 2%;
         width: 21.3%;
         height: 100%;
       }
