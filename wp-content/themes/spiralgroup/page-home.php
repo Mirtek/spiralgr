@@ -14,7 +14,7 @@
   <section class="first-section">
     <h1 class="content col-xs-10">
       <div class="main-title">
-        Go from unknown to <span>indespensible.</span>
+        Go from unknown to <span>indispensable.</span>
       </div>
       <div class="our-clients-container">
         <div class="our-clients-title">
