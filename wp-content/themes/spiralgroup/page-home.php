@@ -132,8 +132,10 @@
   
   <section class="play-video-section">
     <div class="content-wrapper clearfix">
-      <div class="backing"></div>
-      <i class="ico fa fa-play-circle-o" aria-hidden="true"></i>
+      <a class="video-link" href="https://vimeo.com/241906552">
+        <div class="backing"></div>
+        <i class="ico fa fa-play-circle-o" aria-hidden="true"></i>
+      </a>
     </div>
   </section>
 
