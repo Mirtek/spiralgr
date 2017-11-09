@@ -31,7 +31,7 @@
 .cards-title {
   position: relative;
   z-index: 1;
-  font-size: 7vw;
+  font-size: 6vw;
   line-height: 1.25;
   font-weight: 100;
   @include tablet {
@@ -343,7 +343,7 @@
           background-color: $spiralgroup-orange;
         }
         .title {
-          font-size: 7.5vw;
+          font-size: 6.5vw;
           font-weight: 100;
           line-height: 1.25;
           @include tablet {            

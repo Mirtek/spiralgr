@@ -71,12 +71,14 @@ header {
       height: 400px;
       padding: 80px 89px 0 0;
       @include tablet {        
-        width: 430px;
-        height: 635px;
+        width: 36vw;
+        min-width: 373px;
+        height: 735px;
         padding: 180px 154px 0 0;
       }
       @include laptop {        
-        width: 430px;
+        width: 32vw;
+        max-width: 470px;
         height: 735px;
         padding: 180px 154px 0 0;
       }
@@ -88,8 +90,12 @@ header {
         top: 22px;
         right: 30px;
         @include tablet {          
-          top: 80px;
-          right: 150px;
+          top: 27px;
+          right: 5.2vw;
+        }
+        @include laptop {
+          top: 58px;
+          right: 9.2vw;
         }
       }
       .menu-item {
