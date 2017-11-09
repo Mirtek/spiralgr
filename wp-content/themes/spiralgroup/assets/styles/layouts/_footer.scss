@@ -5,6 +5,18 @@
 
 // footer start ------------------->
 footer {
+  
+  ul, li {
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+  }
   background-color: #d3d3d3;
   height: auto;
   min-height: 384px;
@@ -88,6 +100,7 @@ footer {
     .menu {
       .menu-item {
         margin-bottom: 30px;
+        list-style-type: none;
         &>a {
           color: #4b4b4b;
           font-size: 22px;
@@ -104,6 +117,7 @@ footer {
     .social-links {
       .social-links-item {
         margin-bottom: 30px;
+        list-style-type: none;
         &>a {          
           color: #4b4b4b;
           font-size: 22px;
