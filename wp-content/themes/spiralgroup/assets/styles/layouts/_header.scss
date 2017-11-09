@@ -61,6 +61,7 @@ header {
       }
     }
     .menu-block {
+      @extend .delete-default-paddings;
       display: none;
       position: absolute;
       z-index: 2;

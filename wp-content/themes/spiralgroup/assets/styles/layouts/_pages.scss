@@ -125,6 +125,7 @@
 
 // we-make start ----------------------->
 .we-make-section {
+  @extend .delete-default-paddings;
   margin-top: 40px;
   @include tablet {
     margin-top: 70px;
