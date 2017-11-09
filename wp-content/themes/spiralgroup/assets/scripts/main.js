@@ -28,6 +28,18 @@
         $('.menu-block-close-btn').click(function() {
             $('.menu-block').toggle();
         });
+
+        var swiper = new Swiper('.testimonials-section .content-wrapper .swiper-slider', {
+          navigation: {
+            nextEl: '.slider-btn-next',
+            prevEl: '.slider-btn-previous',
+          },
+          slidesPerColumn: 1,
+          loop: true,
+          autoplay: {
+            delay: 3500
+          }
+        });
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired

@@ -144,23 +144,69 @@
         <div class="title">
           Testimonials
         </div>
-        <div class="content">
-          "I work with over 250 marketing agencies every year.  
-          I see them in all states of effectiveness and every 
-          variation you can imagine. Spiralgroup is quite unique 
-          in their commitment to only offering seasoned, senior 
-          level staff who have an amazing depth of knowledge. 
-          They only work in categories where they can bring an 
-          unfair advantage to their clients.  That’s impressive and rare"
-        </div>
-        <div class="author-container">
-          <div class="author">
-            Drew McLellan
+        <div class="swiper-slider">
+          <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="content">
+                  "I work with over 250 marketing agencies every year.  
+                  I see them in all states of effectiveness and every 
+                  variation you can imagine. Spiralgroup is quite unique 
+                  in their commitment to only offering seasoned, senior 
+                  level staff who have an amazing depth of knowledge. 
+                  They only work in categories where they can bring an 
+                  unfair advantage to their clients.  That’s impressive and rare"
+                </div>
+                <div class="author-container">
+                  <div class="author">
+                    Drew McLellan
+                  </div>
+                  <div class="position">
+                    President,  Agency Management Institute
+                  </div>
+                  <div class="logo"></div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="content">
+                  "I work with over 250 marketing agencies every year.  
+                  I see them in all states of effectiveness and every 
+                  variation you can imagine. Spiralgroup is quite unique 
+                  in their commitment to only offering seasoned, senior 
+                  level staff who have an amazing depth of knowledge. 
+                  They only work in categories where they can bring an 
+                  unfair advantage to their clients.  That’s impressive and rare"
+                </div>
+                <div class="author-container">
+                  <div class="author">
+                    Drew McLellan
+                  </div>
+                  <div class="position">
+                    President,  Agency Management Institute
+                  </div>
+                  <div class="logo"></div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="content">
+                  "I work with over 250 marketing agencies every year.  
+                  I see them in all states of effectiveness and every 
+                  variation you can imagine. Spiralgroup is quite unique 
+                  in their commitment to only offering seasoned, senior 
+                  level staff who have an amazing depth of knowledge. 
+                  They only work in categories where they can bring an 
+                  unfair advantage to their clients.  That’s impressive and rare"
+                </div>
+                <div class="author-container">
+                  <div class="author">
+                    Drew McLellan
+                  </div>
+                  <div class="position">
+                    President,  Agency Management Institute
+                  </div>
+                  <div class="logo"></div>
+                </div>
+              </div>
           </div>
-          <div class="position">
-            President,  Agency Management Institute
-          </div>
-          <div class="logo"></div>
         </div>
       </div>
     </div>
