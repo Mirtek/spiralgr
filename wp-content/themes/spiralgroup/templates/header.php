@@ -15,7 +15,7 @@
     <div class="content-wrapper">
       <div class="logo-container">
         <div class="logo">
-          <a href=""></a>
+          <a href="<?= esc_url(home_url('/')); ?>"></a>
         </div>
         <div class="slogan">
           Brand Marketing For Emerging Technology Companies

@@ -6,7 +6,7 @@
 <footer>
     <div class="content-wrapper">
       <div class="logo-container">
-        <a href=""></a>
+        <a href="<?= esc_url(home_url('/')); ?>"></a>
       </div>
       <div class="contact-us-container">
         <div class="title">
