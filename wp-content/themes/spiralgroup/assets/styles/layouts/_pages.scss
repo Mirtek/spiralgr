@@ -38,21 +38,25 @@
     font-size: 2.8vw;
   }
 }
+.card-transition-efects {
+  transition: $transition-time;
+}
 .card-item {  
   cursor: pointer;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  transition: $transition-time;
   padding: 4%;
+  @extend .card-transition-efects;
   @include tablet {    
     padding: 7%;
   }
   &:hover {
     .backing,
     .cards-title {
-      display: none;
+      // display: none;
+      opacity: 0;
     }
   }
 }
