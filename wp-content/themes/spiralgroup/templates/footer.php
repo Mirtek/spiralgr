@@ -21,28 +21,7 @@
         </div>
       </div>
       <div class="footer-menu-container">
-        <ul class="menu">
-          <li class="menu-item">
-            <a href="">
-              Services 
-            </a>
-          </li>
-          <li class="menu-item">
-            <a href="">
-              Results
-            </a>
-          </li>
-          <li class="menu-item">
-            <a href="">
-              Insights
-            </a>
-          </li>
-          <li class="menu-item">
-            <a href="">
-              About Us
-            </a>
-          </li>
-        </ul>
+        <?php wp_nav_menu( array('menu' => 'footer_menu' )); ?>
       </div>
       <div class="footer-social-links-container">
         <ul class="social-links">
