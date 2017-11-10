@@ -453,36 +453,27 @@
   <!-- select-clients-section end -->
 
   <!-- insight-from-section start -->
+
   <section class="insight-from-section">
+    <?php $the_query = new WP_Query( 'posts_per_page=4' ); ?>
+    
     <div class="content-wrapper">
       <div class="title">
         Insights from SpiralGroup Team
       </div>
       <div class="insight-list">
-        <div class="insight-item">
-          <div class="backing"></div>
-          <div class="title">
-            4 Misconceptions That Keep You From Great PR
+        <?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
+          <div class="insight-item img-fluid" style="background: url(<?php echo(get_the_post_thumbnail_url( $post,'thumbnail' )); ?>)">
+            <div class="backing"></div>
+            <div class="title">
+              <a href="<?php the_permalink() ?>"><?php the_title(); ?></a>
+            </div>
           </div>
-        </div>
-        <div class="insight-item">  
-          <div class="backing"></div>       
-          <div class="title">
-            4 Misconceptions That Keep You From Great PR
-          </div>
-        </div>
-        <div class="insight-item">
-          <div class="backing"></div>
-          <div class="title">
-            4 Misconceptions That Keep You From Great PR
-          </div>
-        </div>
-        <div class="insight-item">
-          <div class="backing"></div>
-          <div class="title">
-            4 Misconceptions That Keep You From Great PR
-          </div>
-        </div>
+          <?php 
+        endwhile;
+        wp_reset_postdata();
+        ?>
+        
       </div>
     </div>
   </section>
