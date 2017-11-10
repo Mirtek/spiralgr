@@ -5,6 +5,7 @@
  *
  *  0. Sections
  *  1. Typography
+ *  2. Wrappers
 */
 
 /* ==========================================================================
@@ -35,6 +36,44 @@ h1, h2, h4, h4, h5, h6 {
 h5, h6 {
   font-weight: 400;
 }
+
+/* ==========================================================================
+   2. Wrappers
+   ========================================================================== */
+.wrapper-small {
+  @extend .mx-auto;
+  @include make-col-ready();
+  @include media-breakpoint-up(md) {
+    @include make-col(8);
+  }
+  @include media-breakpoint-up(lg) {
+    @include make-col(6);
+  }  
+}
+.wrapper-medium {
+  @extend .mx-auto;
+  @include make-col-ready();
+  @include media-breakpoint-up(md) {
+    @include make-col(10);
+  }
+  @include media-breakpoint-up(lg) {
+    @include make-col(8);
+  }    
+}
+.wrapper-large {
+  @extend .mx-auto;
+  @include make-col-ready();
+  @include media-breakpoint-up(lg) {
+    @include make-col(10);
+  }    
+}
+.wrapper-full {
+  @include make-col-ready();
+  @include media-breakpoint-up(lg) {
+    @include make-col(12);
+  }  
+}
+
 
 // Responsive design media queries
 // -Mobile first principle-
