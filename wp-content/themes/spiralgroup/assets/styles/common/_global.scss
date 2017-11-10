@@ -5,7 +5,8 @@
  *
  *  0. Sections
  *  1. Typography
- *  2. Wrappers
+ *  2. Backgrounds
+ *  3. Wrappers
 */
 
 /* ==========================================================================
@@ -15,13 +16,38 @@
 .section {
   position: relative;
   max-width: 100%;
+  
+  // Padding: Default
   padding: ($spacer * 3) 0;
   @include media-breakpoint-up(md) {
     padding: ($spacer * 4) 0;
   }
   @include media-breakpoint-up(lg) {
     padding: ($spacer * 5) 0;
-  }  
+  }
+  // Padding Sizes
+  &.padding-large {
+    padding: ($spacer * 5) 0;
+    @include media-breakpoint-up(md) {
+      padding: ($spacer * 6) 0;
+    }
+    @include media-breakpoint-up(lg) {
+      padding: ($spacer * 7) 0;
+    }
+  }
+  &.padding-small {
+    padding: ($spacer * 3) 0 !important;
+  }
+  &.padding-no-top {
+    padding-top: 0
+  }
+  &.padding-no-bottom {
+    padding-bottom: 0;
+  }
+  &.padding-none {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
 
 /* ==========================================================================
@@ -38,7 +64,67 @@ h5, h6 {
 }
 
 /* ==========================================================================
-   2. Wrappers
+   2. Backgrounds
+   ========================================================================== */
+&.bg-cover {
+  background-position: 50% 50%;
+  background-size: cover;
+  text-decoration: none;
+}
+&.bg-cover-transparency {
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba($gray-800, .6);
+  }
+}
+&.bg-light {
+  background-color: $gray-300 !important;
+}
+&.bg-lighter {
+  @extend .bg-light;
+  background-color: $gray-200 !important;
+}
+&.bg-lightest {
+  @extend .bg-light;
+  background-color: $gray-100 !important;
+}
+&.bg-dark {
+  background-color: $gray-700 !important;
+  color: $gray-100;
+  h1, h2, h3, h4, h5, h6 {
+    color: $gray-100;
+  }
+  a {
+    color: $gray-100;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+&.bg-darker {
+  @extend .bg-dark;
+  background-color: $gray-800 !important;
+}
+&.bg-darkest {
+  @extend .bg-dark;
+  background-color: $gray-900 !important;
+}
+&.bg-primary {
+  @extend .bg-dark;
+  background-color: $blue !important;
+}
+&.bg-image {
+  @extend .bg-darker;
+  @extend .bg-cover;
+}
+
+/* ==========================================================================
+   3. Wrappers
    ========================================================================== */
 .wrapper-small {
   @extend .mx-auto;
@@ -75,8 +161,10 @@ h5, h6 {
 }
 
 
-// Responsive design media queries
-// -Mobile first principle-
+/* ==========================================================================
+   This CSS Needs Organizing Below
+   ========================================================================== */
+
 @mixin tablet {
   @media (min-width: 768px) {
     @content;
@@ -94,13 +182,6 @@ h5, h6 {
     @content;
   }
 }
-// -Mobile first principle END-
-
-// ============ end of media queries ==============
-// ============== fonts ==========================
-
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,700,700i");
-// ============== end of fonts =======================
 
 
 .content-wrapper {
