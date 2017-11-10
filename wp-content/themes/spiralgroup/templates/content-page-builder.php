@@ -28,6 +28,31 @@ if (have_rows('page_builder', $page_id)) :
       <?php
       switch ($section) {
         
+        // Image + Content Blocks
+        case 'image_content_blocks':
+          get_template_part('templates/section-image-content-blocks');
+        break;
+
+        // Video
+        case 'video':
+          get_template_part('templates/sectionvideo-');
+        break;
+
+        // Testimonials
+        case 'testimonials':
+          get_template_part('templates/section-testimonials');
+        break;
+
+        // Clients
+        case 'clients':
+          get_template_part('templates/section-clients');
+        break;
+
+        // Insights
+        case 'insights':
+          get_template_part('templates/section-insights');
+        break;
+
         // Default: Content
         default:
           get_template_part('templates/section-content');
