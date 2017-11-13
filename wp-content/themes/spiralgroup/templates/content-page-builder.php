@@ -24,7 +24,6 @@ if (have_rows('page_builder', $page_id)) :
           style="background-image: url('<?= $background_image['url'] ?>')"
         <?php endif; ?>
     >
-      <div class="container">
       <?php
       switch ($section) {
         
@@ -59,7 +58,6 @@ if (have_rows('page_builder', $page_id)) :
         break;
         
       } ?>
-      </div>
 
     </div>
   <?php
