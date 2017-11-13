@@ -34,7 +34,7 @@ if (have_rows('page_builder', $page_id)) :
 
         // Video
         case 'video':
-          get_template_part('templates/sectionvideo-');
+          get_template_part('templates/section-video');
         break;
 
         // Testimonials
