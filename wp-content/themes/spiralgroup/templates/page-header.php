@@ -8,41 +8,43 @@
 		<?php } ?>
 		<h1 class="content col-xs-10">
 			<div class="main-title">
-				<?php if (get_field('header_type')==="default" || empty(get_field('header_type'))) {
+				<?php $header_type = get_field('header_type') ?>
+				<?php if ($header_type==="default" || empty(get_field('header_type'))) {
 					the_title();
 					echo "</div>"; // close main-title for default
 				} 
-				elseif (get_field('header_type')==="custom") {
-					echo(get_field('header_title'));
+				elseif ($header_type==="custom") {
+					the_field('header_title');
 					if ( !empty(get_field('header_subtitle'))) { 
 						echo ("<div class='our-clients-title'>");
-						echo get_field('header_subtitle');
+						the_field('header_subtitle');
 					echo ("</div>"); // close our-clients div
 					echo ("</div>"); // close main-title dif for custom
 				}
 			}
-			elseif (get_field('header_type')==="featured-clients") {
-				echo(get_field('header_title'));
+			elseif ($header_type==="featured-clients") {
+				the_field('header_title');
 				if ( !empty(get_field('header_subtitle'))) { 
 					echo ("</div>"); // close our-clients div
 					echo ("<div class='our-clients-container'>");	
 					echo ("<div class='our-clients-title'>");				
 					echo ("<div class='our-clients-logo-list'>");
-					echo get_field('header_subtitle');
+					the_field('header_subtitle');
 					echo ("</div"); // close header subtitle div                   
  					echo ("</div>"); // close logo-list div
 					echo ("</div>"); // close main-title dif for custom					
 				}
 			}
 			?>
-		<?php 
-		$images = get_field('header_featured_clients');
-		if( $images ): ?>
-		<?php foreach( $images as $image ): ?>
-			<img height='50px' clas="img-fluid" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />         
-		<?php endforeach; ?>
+		<?php if ($header_type==="featured-clients"): ?>
+			<?php $images = get_field('header_featured_clients'); ?>
+			<?php if( $images ): ?>
+				<?php foreach( $images as $image ): ?>
+					<img height='50px' clas="img-fluid" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />         
+				<?php endforeach; ?>
+			<?php endif; ?>
 		<?php endif; ?>
-		
+
 	</h1>
 	<?php get_template_part('templates/entry-meta'); ?>
 </section>
