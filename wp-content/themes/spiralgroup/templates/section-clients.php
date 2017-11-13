@@ -6,9 +6,10 @@
       <div class="clients-list">
          <?php if ( have_rows('clients') ) : 
                 while ( have_rows('clients') ) : the_row(); 
+                $logo = get_sub_field('logo');    
             ?>
         <div class="clients-item">
-          <div class="company-logo company-1">
+          <div class="company-logo company-1" style="background-image: url(<?php echo $logo['sizes']['medium']; ?>);">
             
           </div>
           <div class="hover-description">
