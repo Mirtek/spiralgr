@@ -20,7 +20,7 @@
                                     <div class="position">
                                         <?php echo ($tes['company']); ?>
                                     </div>
-                                    <div class="logo"></div>
+                                    <img src="<?php echo ($tes['logo']['sizes']['medium']); ?>">
                                 </div>
                             </div><!-- swiper-slide end -->
                         <?php endforeach; ?>
