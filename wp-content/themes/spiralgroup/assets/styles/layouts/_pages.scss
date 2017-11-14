@@ -29,6 +29,30 @@
 
   }
 
+.grid-item {
+  float: left;
+  width: $grid-item-width;
+  height: $grid-item-height;
+  &:hover {
+    .backing,
+    .cards-title {
+      opacity: 0;
+    }
+  }
+}
+
+.grid-smaller-item {
+  width: $grid-item-width - 20px;
+  height: $grid-item-height - 20px;
+  margin: $grid-item-mh $grid-item-mw;
+}
+
+.grid-item--width2 { width: $grid-item-width * 2; }
+.grid-item--height2 { height: $grid-item-height * 2; }
+
+.grid-smaller-item--width2 { width: $grid-item-width * 2 - $grid-item-mh * 2; }
+.grid-smaller-item--height2 { height: $grid-item-height * 2 - $grid-item-mh * 2; }
+
   /* 0.3 Section "Video"
    ========================================================================== */
   .section.content {
@@ -76,6 +100,7 @@
   z-index: 1;
 }
 .cards-title {
+  color: #fff;
   position: relative;
   z-index: 1;
   font-size: 6vw;
@@ -84,6 +109,7 @@
   @include tablet {
     font-size: 2.8vw;
   }
+  padding: 3vw 2vw;
 }
 .card-transition-efects {
   transition: $transition-time;
@@ -107,6 +133,8 @@
     }
   }
 }
+
+
 
 // first-section start ------------------->
 .first-section {

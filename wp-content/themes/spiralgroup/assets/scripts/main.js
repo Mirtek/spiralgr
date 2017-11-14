@@ -21,6 +21,12 @@
         // JavaScript to be fired on all pages
         console.log('document ready!');
         
+        $('.grid').isotope({
+          itemSelector: '.grid-item',
+          layoutMode: 'masonry',
+          columnWidth: 380
+          });
+ 
         $('.menu-button').click(function() {
           console.log('menu-button click!');
           $('.menu-block').toggle();
@@ -67,6 +73,7 @@
     'home': {
       init: function() {
         // JavaScript to be fired on the home page
+      
       },
       finalize: function() {
         // JavaScript to be fired on the home page, after the init JS
