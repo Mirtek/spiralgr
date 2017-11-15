@@ -9,7 +9,7 @@
                 $logo = get_sub_field('logo');    
             ?>
         <div class="clients-item">
-          <div class="company-logo company-1" style="background-image: url(<?php echo $logo['sizes']['medium']; ?>);">
+          <div class="company-logo company-1" style="background-image: url(<?php echo $logo['sizes']['medium']; ?>); background-size: 60%;">
             
           </div>
           <div class="hover-description">

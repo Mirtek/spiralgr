@@ -164,6 +164,17 @@ h5, h6 {
 /* ==========================================================================
    This CSS Needs Organizing Below
    ========================================================================== */
+@mixin mobile {
+  @media (min-width: 320px) {
+    @content;
+  }
+}
+
+@mixin large-mobile {
+  @media (min-width: 360px) {
+    @content;
+  }
+}
 
 @mixin tablet {
   @media (min-width: 768px) {
@@ -182,7 +193,11 @@ h5, h6 {
     @content;
   }
 }
-
+@mixin retina-laptop {
+  @media (min-width: 2560px) {
+    @content;
+  }
+}
 
 .content-wrapper {
   margin: 0 5%;
