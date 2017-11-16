@@ -76,6 +76,10 @@
         }
         @include large-mobile {
         }
+        @include extra-large-mobile {
+          width: $grid-item-width;
+          height: $grid-item-width;
+        }
         @include tablet {
           width: $grid-item-width * 0.88;
           height: $grid-item-width * 0.88;
@@ -141,6 +145,10 @@
         }
         @include large-mobile {
         }
+        @include extra-large-mobile {
+          width: $grid-item-width;
+          height: $grid-item-width;
+        }
         @include tablet {
           height: $grid-item-width * 0.88;
           width: $grid-item-width * 0.88;       
@@ -173,6 +181,9 @@
         }
         @include large-mobile {
         }
+        @include extra-large-mobile {
+          width: $grid-item-width;
+        }
         @include tablet {
           width: $grid-item-width * 0.88;
         }
@@ -191,6 +202,9 @@
           height: $grid-item-width * 0.73;
         }
         @include large-mobile { 
+        }
+        @include extra-large-mobile {
+          height: $grid-item-width;
         }
         @include tablet {
           height: $grid-item-height * 0.88;       
@@ -212,6 +226,9 @@
         }
         @include large-mobile {
         }
+        @include extra-large-mobile {
+          width: $grid-item-width;
+        }
         @include tablet {
           width: $grid-item-width * 0.88;
         }
@@ -230,6 +247,9 @@
           height: $grid-item-width * 0.73;
         }
         @include large-mobile {
+        }
+        @include extra-large-mobile {
+          height: $grid-item-width;
         }
         @include tablet {
           height: $grid-item-height * 0.88;
