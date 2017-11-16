@@ -4,7 +4,6 @@
     <div class="grid clearfix">
      <?php if ( have_rows('block') ) :
               while ( have_rows('block') ) : the_row();
-                // $block = get_sub_field('block');
                 $layout_type = get_row_layout();
 
                 switch ( $layout_type ) {
@@ -98,38 +97,5 @@
         endwhile;
       endif; ?>
     </div>
-
-<style>
-
-/*        .grid-item {
-            width: 200px;
-            height: 200px;
-        }
-
-        .grid-item--width2 {
-            width: 400px;
-        }
-
-        .grid-item--height2 {
-            height: 400px;
-        }
-
-        .grid-smaller-item {
-            width: 180px;
-            height: 180px;
-        }
-
-        .grid-smaller-item--width2 {
-            width: 360px;
-            height: 180px;
-        }
-
-        .grid-smaller-item--height2 {
-            width: 180px;
-            height: 360px;
-        }
-*/
-
-</style>
 
 </section> 
