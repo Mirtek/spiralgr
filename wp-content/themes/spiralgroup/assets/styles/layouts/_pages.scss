@@ -108,6 +108,26 @@
         }
 }
 
+.grid-smaller-item--featured {
+  background-color: $spiralgroup-green;
+  &:hover {
+    background-color: $spiralgroup-orange;
+    .cards-title {
+      opacity: 1;
+    }
+  } 
+}
+
+.grid-smaller-item--featured2 {
+  background-color: $spiralgroup-teal;
+  &:hover {
+    background-color: $spiralgroup-green;
+    .cards-title {
+      opacity: 1;
+    }
+  } 
+}
+
 .grid-smaller-item {
   width: $grid-item-width - 20px;
   height: $grid-item-height - 20px;
@@ -275,14 +295,34 @@
   color: #fff;
   position: relative;
   z-index: 1;
-  font-size: 6vw;
+  font-size: 5vw;
   line-height: 1.25;
   font-weight: 100;
+  @include mobile {
+    font-size: 12vw;
+  }
   @include tablet {
     font-size: 2.8vw;
   }
   padding: 3vw 2vw;
 }
+
+.cards-subtitle { 
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  font-size: 2vw;
+  line-height: 1.5;
+  font-weight: 100;
+  @include mobile {
+    font-size: 6vw;
+  }
+  @include tablet {
+    font-size: 1.5vw;
+  }
+  padding-left: 2vw;
+}
+
 .card-transition-efects {
   transition: $transition-time;
 }
