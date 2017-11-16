@@ -15,7 +15,7 @@
                         ?>
                             
                         <div class="grid-item <?php echo $class ?>">
-                        <div class="grid-smaller-item <?php echo $class_smaller ?>" style="background: url(<?php echo $image_field['sizes']['regular-thumb'] ?>)">
+                        <div class="grid-smaller-item <?php echo $class_smaller ?>" style="background-image: url(<?php echo $image_field['sizes']['regular-thumb'] ?>)">
 
                             <div class="cards-title" >
                                <p><?php echo get_sub_field('title') ?></p>
@@ -34,7 +34,7 @@
                         ?>
                             
                         <div class="grid-item <?php echo $class ?>">
-                        <div class="grid-smaller-item <?php echo $class_smaller ?>" style="background: url(<?php echo $image_field['sizes']['insights-thumb'] ?>)">
+                        <div class="grid-smaller-item <?php echo $class_smaller ?>" style="background-image: url(<?php echo $image_field['sizes']['insights-thumb'] ?>)">
 
                             <div class="cards-title">
                               <p><?php echo get_sub_field('title2') ?></p>
@@ -53,7 +53,7 @@
                         ?>
                             
                         <div class="grid-item <?php echo $class ?>">
-                        <div class="grid-smaller-item <?php echo $class_smaller ?>" style="background: url(<?php echo $image_field['sizes']['portrait-thumb'] ?>)">
+                        <div class="grid-smaller-item <?php echo $class_smaller ?>" style="background-image: url(<?php echo $image_field['sizes']['portrait-thumb'] ?>)">
 
                             <div class="cards-title">
                               <p><?php echo get_sub_field('title') ?></p>
@@ -91,5 +91,38 @@
         endwhile;
       endif; ?>
     </div>
+
+<style>
+
+/*        .grid-item {
+            width: 200px;
+            height: 200px;
+        }
+
+        .grid-item--width2 {
+            width: 400px;
+        }
+
+        .grid-item--height2 {
+            height: 400px;
+        }
+
+        .grid-smaller-item {
+            width: 180px;
+            height: 180px;
+        }
+
+        .grid-smaller-item--width2 {
+            width: 360px;
+            height: 180px;
+        }
+
+        .grid-smaller-item--height2 {
+            width: 180px;
+            height: 360px;
+        }
+*/
+
+</style>
 
 </section> 
