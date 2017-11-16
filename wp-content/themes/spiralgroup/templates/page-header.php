@@ -40,7 +40,7 @@
 			<?php $images = get_field('header_featured_clients'); ?>
 			<?php if( $images ): ?>
 				<?php foreach( $images as $image ): ?>
-					<img height='50px' clas="img-fluid" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />         
+					<img class="header-image--size" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />         
 				<?php endforeach; ?>
 			<?php endif; ?>
 		<?php endif; ?>

@@ -17,23 +17,23 @@
    0. Page Builder
    ========================================================================== */
 
-  // .header-image--size {
-  //       width: 200%;
-  //       @include mobile {
-  //         height: 25%;
-  //         width: 25%;
-  //       }
-  //       @include large-mobile {
-  //       }
-  //       @include tablet {
-  //       }
-  //       @include laptop {
-  //       }
-  //       @include large-laptop {
-  //       }
-  //       @include retina-laptop {
-  //       }
-  // }
+  .header-image--size {
+        width: 200%;
+        @include mobile {
+          height: 15%;
+          width: 15%;
+        }
+        @include large-mobile {
+        }
+        @include tablet {
+        }
+        @include laptop {
+        }
+        @include large-laptop {
+        }
+        @include retina-laptop {
+        }
+   }
 
   /* 0.1 Section "Content"
    ========================================================================== */
@@ -281,26 +281,6 @@
 .card-transition-efects {
   transition: $transition-time;
 }
-.card-item {  
-  cursor: pointer;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 4%;
-  @extend .card-transition-efects;
-  @include tablet {    
-    padding: 7%;
-  }
-  &:hover {
-    .backing,
-    .cards-title {
-      // display: none;
-      opacity: 0;
-    }
-  }
-}
-
 
 
 // first-section start ------------------->
@@ -371,318 +351,102 @@
 // we-make start ----------------------->
 .we-make-section {
   @extend .delete-default-paddings;
-  margin-top: 40px;
   @include tablet {
-    margin-top: 70px;
   }
   .content-wrapper {
     min-height: 33vw;
     @include tablet {
       height: 100%;
     }
-    .column-1,
-    .column-2,
-    .column-3 {
-      color: #fff;
-      display: inline-block;
-      height: 100%;
-      vertical-align: top;
-      float: left;
-    }
-    .column-margin {
-      display: inline-block;
-      height: 100%;
-      width: 1.6%;
-      float: left;
-    }
-    .column-1 {
-      width: 100%;
-      @include tablet {
-        width: 27.6%;
-      }
-      .row-1,
-      .row-2 {
-        height: 60vw;
-        background-color: rgba($color: $gray-600, $alpha: 0.7);
-        padding: 0 10%;
-        position: relative;
-        margin-bottom: 20px;
-        @include tablet {
-          margin-bottom: 0;
-          height: 48.5%;
-        }        
-      }
-      .row-margin {
-        height: 3%;
-      }
-      .row-1.clients {
-        background-position: top left;
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
-        background-image: url('../images/sample-image.jpg');
-        position: relative;
-      }
-      .row-2.valuations {   
-        background-position: top left;
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
-        background-image: url('../images/sample-image.jpg');
-        position: relative;        
-      }
-    }
-    .column-2.we-make {
-      width: 100%;
-      height: 60vw;
-      background-color: $spiralgroup-teal;
-      padding: 5%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      margin-bottom: 20px;
-      @include tablet {
-        height: 100%;
-        width: 47.9%;
-        margin-bottom: 0;
-      }
-      &:hover {
-        background-color: $spiralgroup-green;
-      }
-      .column-title {
-        font-size: 8.4vw;
-        font-weight: 100;
-        line-height: 1.25;
-        @include tablet {          
-          font-size: 3.6vw;
-        }
-        &>span {
-          font-weight: bold;
-        }
-      }
-      .column-description {
-        font-size: 4.5vw;
-        line-height: 1.36;
-        font-weight: 100;
-        margin-top: 4vw;
-        @include tablet {  
-          margin-top: 2vw;        
-          font-size: 1.5vw;
-        }
-      }
-    }
-    .column-3.continents {    
-      display: flex;
-      width: 100%;        
-      height: 60vw;      
-      background-color: rgba($color: $gray-600, $alpha: 0.7);      
-      background-position: top left;
-      background-size: auto 100%;
-      background-repeat: no-repeat;
-      background-image: url('../images/sample-image.jpg');
-      cursor: pointer;
-      position: relative;    
-      padding: 8%;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: flex-end;
-      @include tablet {
-        padding: 2%;
-        width: 21.3%;
-        height: 100%;
-      }
-    }
+    // .column-2.we-make {
+    //   width: 100%;
+    //   height: 60vw;
+    //   background-color: $spiralgroup-teal;
+    //   padding: 5%;
+    //   display: flex;
+    //   flex-direction: column;
+    //   justify-content: center;
+    //   margin-bottom: 20px;
+    //   @include tablet {
+    //     height: 100%;
+    //     width: 47.9%;
+    //     margin-bottom: 0;
+    //   }
+    //   &:hover {
+    //     background-color: $spiralgroup-green;
+    //   }
+    //   .column-title {
+    //     font-size: 8.4vw;
+    //     font-weight: 100;
+    //     line-height: 1.25;
+    //     @include tablet {          
+    //       font-size: 3.6vw;
+    //     }
+    //     &>span {
+    //       font-weight: bold;
+    //     }
+    //   }
+    //   .column-description {
+    //     font-size: 4.5vw;
+    //     line-height: 1.36;
+    //     font-weight: 100;
+    //     margin-top: 4vw;
+    //     @include tablet {  
+    //       margin-top: 2vw;        
+    //       font-size: 1.5vw;
+    //     }
+    //   }
+    // }
+
   }
 }
 // we-make end ----------------------->
 
 // grounded-in start ----------------------->
-.grounded-in-section {
-  margin-top: 40px;
-  @include tablet {
-    margin-top: 70px;
-  }
-  .content-wrapper {
-    @include laptop {
-      min-height: 50vw;
-      height: 1px;
-    }
-    .column-1,
-    .column-2 {
-      color: #fff;
-      display: block;
-      @include laptop {
-        display: inline-block;
-        float: left;
-        width: 49.2%;
-        min-height: 100%;
-        vertical-align: top;
-        height: 1px;
-      }
-    }
-    .column-margin {
-      display: inline-block;
-      height: 100%;
-      width: 1.6%;
-      float: left;      
-      position: relative;
-    }
-    .column-1 {    
-      margin-bottom: 4%;
-      height: 80vw;
-      @include laptop {
-        margin: 0;
-        min-height: 100%;
-        height: 1px;
-      }
-      .row-1 {
-        margin-bottom: 4%;
-        height: 40.5%;
-        @include laptop {          
-          height: 30.5%;
-        }
-        .sub-column-1,
-        .sub-column-2 {
-          height: 100%;
-          float: left;
-          background-color: $spiralgroup-teal;
-          width: 48%;
-          font-size: 44px;
-          font-weight: 100;
-          line-height: 1.36;
-          position: relative;
-        }
-        .sub-column-1.branding {          
-          background-position: top left;
-          background-size: 100% 100%;
-          background-repeat: no-repeat;
-          background-image: url('../images/sample-image.jpg');
-        }
-        .sub-column-2.relations {          
-          background-position: top left;
-          background-size: 100% 100%;
-          background-repeat: no-repeat;
-          background-image: url('../images/sample-image.jpg');
-          flex-direction: column;
-          justify-content: flex-end;
-        }
-        .sub-column-margin {      
-          display: block;
-          float: left;
-          width: 4%;
-          height: 1px;
-          @include laptop {
-            height: 100%;
-          }
-        }
-      }
-      .row-2.grounded {
-        background-color: $spiralgroup-green;
-        height: 55.5%;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 0 10%;
-        @include laptop {
-          height: 66.5%;
-        }
-        &:hover {
-          background-color: $spiralgroup-orange;
-        }
-        .title {
-          font-size: 6.5vw;
-          font-weight: 100;
-          line-height: 1.25;
-          @include tablet {            
-            font-size: 6vw;
-          }
-          @include laptop {            
-            font-size: 4vw;
-          }
-          &>span {
-            font-weight: bold;
-          }
-        }
-        .description {
-          font-weight: 100;
-          font-size: 3.5vw;
-          line-height: 1.35;
-          margin-top: 20px;
-          @include laptop {            
-            font-size: 1.5vw;
-          }
-        }
-      }
-    }
-    .column-2 {
-      display: block;
-      height: 100vw;
-      @include laptop {
-        min-height: 100%;
-        height: 1px;
-      }
-      .row-1 {
-        height: 50%;
-        @include laptop {
-          margin-bottom: 4%;
-          height: 58.5%;
-        }
-        .sub-column-1,
-        .sub-column-2 {
-          height: 100%;
-          float: left;
-          background-color: $spiralgroup-teal;
-          width: 48%;
-          position: relative;
-          background-position: top center;
-          background-size: 100% 100%;
-          background-repeat: no-repeat;
-          flex-direction: column;
-          justify-content: flex-end;
-          @include laptop {
-            background-size: auto 100%;
-          }
-        }
-        .sub-column-1.social {
-          background-image: url('../images/sample-image.jpg');
-        }
-        .sub-column-2.marketing {
-          background-image: url('../images/sample-image.jpg');
-        }
-        .sub-column-margin {
-          float: left;
-          width: 4%;
-          height: 100%;
-        }
-      }
-      .row-2.digital-marketing { 
-        margin-top: 4%;
-        height: 46%;    
-        background-color: $spiralgroup-teal;
-        background-position: top left;
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
-        background-image: url('../images/sample-image.jpg');
-        position: relative;
-        flex-direction: column;
-        align-items: flex-end;
-        justify-content: flex-end;
-        padding: 7% 13%;
-        @include laptop {    
-          margin-top: 0;      
-          height: 38.5%;
-        }
-      }
-    }
-  }
-}
+
+      // .row-2.grounded {
+      //   background-color: $spiralgroup-green;
+      //   height: 55.5%;
+      //   position: relative;
+      //   display: flex;
+      //   flex-direction: column;
+      //   justify-content: center;
+      //   padding: 0 10%;
+      //   @include laptop {
+      //     height: 66.5%;
+      //   }
+      //   &:hover {
+      //     background-color: $spiralgroup-orange;
+      //   }
+      //   .title {
+      //     font-size: 6.5vw;
+      //     font-weight: 100;
+      //     line-height: 1.25;
+      //     @include tablet {            
+      //       font-size: 6vw;
+      //     }
+      //     @include laptop {            
+      //       font-size: 4vw;
+      //     }
+      //     &>span {
+      //       font-weight: bold;
+      //     }
+      //   }
+      //   .description {
+      //     font-weight: 100;
+      //     font-size: 3.5vw;
+      //     line-height: 1.35;
+      //     margin-top: 20px;
+      //     @include laptop {            
+      //       font-size: 1.5vw;
+      //     }
+      //   }
+      // }
+
 // grounded-in end ----------------------->
 
 // play-video start ----------------->
 .play-video-section {
-  margin-top: 40px;
-  @include tablet {
-    margin-top: 70px;
-  }
   .content-wrapper {
     min-height: 45vw;
     background-position: top left;
@@ -716,11 +480,7 @@
 
 // testimonials-section start ---------------->
 .testimonials-section {
-  margin-top: 34px;
   color: #fff;
-  @include tablet {
-    margin-top: 64px;
-  }
   .content-wrapper {
     .custom-container  {
       background-color: $spiralgroup-green;
@@ -788,10 +548,6 @@
 
 // select-clients-section start ---------------->
 .select-clients-section {
-  margin-top: 45px;
-  @include tablet {
-    margin-top: 85px
-  }
   .content-wrapper {
     height: 100%;
     min-height: 100%;
@@ -827,32 +583,26 @@
         width: 100%;
         margin-bottom: 20px;
         @include mobile {
-          /*margin-bottom: 0;*/
           height: 280px;
           width: 280px;
         }
         @include large-mobile {
-          /*margin-bottom: 0;*/
           height: 360px;
           width: 360px;
         }
         @include tablet {
-          /*margin-bottom: 0;*/
           height: 320px;
           width: 320px;
         }
         @include laptop {
-          /*margin-bottom: 0;*/
           height: 300px;
           width: 300px;
         }
         @include large-laptop {
-          /*margin-bottom: 0;*/
           height: 430px;
           width: 430px;
         }
         @include retina-laptop {
-          /*margin-bottom: 0;*/
           height: 660px;
           width: 660px;
         }
@@ -868,41 +618,6 @@
           background-repeat: no-repeat;
           background-position: center center;
           background-size: auto auto;
-          &.company-1 {
-            background-image: url("../images/partners/1.png");
-          }
-          &.company-2 {
-            background-image: url("../images/partners/2.png");
-
-          }
-          &.company-3 {
-            background-image: url("../images/partners/3.png");
-
-          }
-          &.company-4 {
-            background-image: url("../images/partners/4.png");
-
-          }
-          &.company-5 {
-            background-image: url("../images/partners/5.png");
-
-          }
-          &.company-6 {
-            background-image: url("../images/partners/6.png");
-
-          }
-          &.company-7 {
-            background-image: url("../images/partners/7.png");
-
-          }
-          &.company-8 {
-            background-image: url("../images/partners/8.png");
-
-          }
-          &.company-9 {
-            background-image: url("../images/partners/9.png");
-
-          }
         }
         .hover-description {
           display: none;
@@ -942,11 +657,7 @@
 
 // insight-from-section start ---------------->
 .insight-from-section {
-  margin-top: 45px;
-  margin-bottom: 50px;
   @include tablet {
-    margin-top: 85px;
-    margin-bottom: 90px;
   }
   .content-wrapper {
     .title {
@@ -1111,4 +822,11 @@
     }
   }
 }
+
 // article-section end -------------------->
+
+h2.entry-title {
+  @include mobile {
+    font-size: 2rem;
+  }
+}
