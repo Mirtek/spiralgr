@@ -106,6 +106,7 @@
   background-color: $spiralgroup-green;
   &:hover {
     background-color: $spiralgroup-orange;
+    transition: $transition-base;
     .cards-title {
       opacity: 1 !important;
     }
@@ -419,6 +420,10 @@
     }
     .backing {
       background-color: rgba($color: $spiralgroup-orange, $alpha: 0.5);
+      &:hover{
+        background-color: rgba($color: $spiralgroup-orange, $alpha: 0.7);      
+        transition: $transition-base;
+      }
     }
     .ico {
       color: #fff;
