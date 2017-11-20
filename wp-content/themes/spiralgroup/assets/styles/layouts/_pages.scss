@@ -496,7 +496,8 @@
           }
         }
         > img {
-          width: 15%;
+          max-height: 50px;
+          width: auto;
         }
       }
     }
