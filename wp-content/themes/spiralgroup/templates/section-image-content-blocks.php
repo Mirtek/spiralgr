@@ -14,12 +14,25 @@
                         ?>
                             
                         <div class="grid-item <?php echo $class ?>">
-                        <div class="grid-smaller-item <?php echo $class_smaller ?>" style="background-image: url(<?php echo $image_field['sizes']['regular-thumb'] ?>)">
+                        <?php if (get_sub_field('link_url')) : ?>
+                        <?php echo "<a href=" ?>
+                        <?php echo the_sub_field('link_url') ?>
+                        <?php echo "\">" ?>    
+                        <?php endif; ?>
 
-                            <div class="cards-title" >
-                               <p><?php echo get_sub_field('title') ?></p>
+                        <div class="grid-smaller-item <?php echo $class_smaller ?>" style="background-image: url(<?php echo $image_field['sizes']['regular-thumb'] ?>)">
+                        <div class="grid-bg--transparency <?php if (get_sub_field('link_url')) :
+                                                                echo "grid-bg--hover";
+                                                                endif; 
+                                                           ?>">
+                            <div class="cards-title">
+                              <p><?php echo get_sub_field('title') ?></p>
                             </div>
                         </div>
+                        </div>
+                        <?php if (get_sub_field('link_url')) : ?>
+                        <?php echo "</a>" ?>
+                        <?php endif; ?>
                         </div>   
 
                         <?php 
@@ -33,12 +46,24 @@
                         ?>
                             
                         <div class="grid-item <?php echo $class ?>">
+                        <?php if (get_sub_field('link_url')) : ?>
+                        <?php echo "<a href=" ?>
+                        <?php echo the_sub_field('link_url') ?>
+                        <?php echo "\">" ?>    
+                        <?php endif; ?>   
                         <div class="grid-smaller-item <?php echo $class_smaller ?>" style="background-image: url(<?php echo $image_field['sizes']['insights-thumb'] ?>)">
-
+                        <div class="grid-bg--transparency <?php if (get_sub_field('link_url')) :
+                                                                echo "grid-bg--hover";
+                                                                endif; 
+                                                           ?>">
                             <div class="cards-title">
                               <p><?php echo get_sub_field('title2') ?></p>
                             </div>
                         </div>
+                        </div>
+                        <?php if (get_sub_field('link_url')) : ?>
+                        <?php echo "</a>" ?>
+                        <?php endif; ?> 
                         </div>   
 
                         <?php 
@@ -50,14 +75,27 @@
                         $class_smaller="grid-smaller-item--height2";
                         $image_field = get_sub_field('image');
                         ?>
-                            
-                        <div class="grid-item <?php echo $class ?>">
-                        <div class="grid-smaller-item <?php echo $class_smaller ?>" style="background-image: url(<?php echo $image_field['sizes']['portrait-thumb'] ?>)">
 
+                        <div class="grid-item <?php echo $class ?>">
+                        <?php if (get_sub_field('link_url')) : ?>
+                        <?php echo "<a href=" ?>
+                        <?php echo the_sub_field('link_url') ?>
+                        <?php echo "\">" ?>    
+                        <?php endif; ?>
+
+                        <div class="grid-smaller-item <?php echo $class_smaller ?>" style="background-image: url(<?php echo $image_field['sizes']['portrait-thumb'] ?>)">
+                        <div class="grid-bg--transparency <?php if (get_sub_field('link_url')) :
+                                                                echo "grid-bg--hover";
+                                                                endif; 
+                                                           ?>">
                             <div class="cards-title">
                               <p><?php echo get_sub_field('title') ?></p>
                             </div>
                         </div>
+                        </div>
+                        <?php if (get_sub_field('link_url')) : ?>
+                        <?php echo "</a>" ?>
+                        <?php endif; ?>
                         </div>   
 
                         <?php 
@@ -75,15 +113,23 @@
                         ?>
                             
                         <div class="grid-item <?php echo $class ?>">
+                        <?php if (get_sub_field('link_url')) : ?>
+                        <?php echo "<a href=" ?>
+                        <?php echo the_sub_field('link_url') ?>
+                        <?php echo "\">" ?>    
+                        <?php endif; ?>
                         <div class="grid-smaller-item <?php echo $class_smaller ?> <?php echo $hover_effect_class ?>">
 
-                            <div class="cards-title">
-                              <p><?php echo get_sub_field('title') ?></p>
+                            <div class="cards-title cards-title--featured">
+                              <p><?php echo get_sub_field('title')?> </p>
                             </div>
-                            <div class="cards-subtitle">
+                            <div class="cards-subtitle cards-subtitle--featured">
                               <p><?php echo get_sub_field('subtitle') ?></p>
                             </div>
                         </div>
+                        <?php if (get_sub_field('link_url')) : ?>
+                        <?php echo "</a>" ?>
+                        <?php endif; ?>
                         </div>   
 
                         <?php 

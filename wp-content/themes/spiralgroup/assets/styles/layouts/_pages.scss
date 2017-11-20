@@ -49,10 +49,13 @@
   height: $grid-item-height;
   margin-top: 0px;
   margin-bottom: 0px;
-  &:hover {
-    .backing,
-    .cards-title {
-      opacity: 0;
+  a {
+      &:hover {
+      .backing,
+      .cards-title {
+        opacity: 0;
+        transition: $transition-base;
+      }
     }
   }
         @include mobile {
@@ -104,7 +107,7 @@
   &:hover {
     background-color: $spiralgroup-orange;
     .cards-title {
-      opacity: 1;
+      opacity: 1 !important;
     }
   } 
 }
@@ -114,7 +117,7 @@
   &:hover {
     background-color: $spiralgroup-green;
     .cards-title {
-      opacity: 1;
+      opacity: 1 !important;
     }
   } 
 }
@@ -289,6 +292,9 @@
   }
   padding: 3vw 2vw;
 }
+.cards-title--featured {
+  padding: 6vw 3vw 2vw 3vw;
+}
 
 .cards-subtitle { 
   color: #fff;
@@ -305,7 +311,9 @@
   }
   padding-left: 2vw;
 }
-
+.cards-subtitle--featured {
+  padding-left: 3vw;
+}
 .card-transition-efects {
   transition: $transition-time;
 }
