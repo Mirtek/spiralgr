@@ -23,21 +23,8 @@
    ========================================================================== */
 
   .header-image--size {
-        width: 200%;
-        @include mobile {
-          height: 15%;
-          width: 15%;
-        }
-        @include large-mobile {
-        }
-        @include tablet {
-        }
-        @include laptop {
-        }
-        @include large-laptop {
-        }
-        @include retina-laptop {
-        }
+        height: 6%;
+        width: 6%;
    }
 
   /* 0.1 Section "Content"

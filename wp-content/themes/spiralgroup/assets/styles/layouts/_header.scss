@@ -56,7 +56,7 @@ header {
         color: #f68a2e;
         cursor: pointer;
         .ico {
-          font-size: 20px;
+          font-size: 30px;
         }
       }
     }
@@ -81,7 +81,7 @@ header {
         width: 32vw;
         max-width: 470px;
         height: 735px;
-        padding: 180px 154px 0 0;
+        padding: 180px 178px 0 0;
       }
       .menu-block-close-btn {
         font-size: 28px;
@@ -98,11 +98,17 @@ header {
           top: 58px;
           right: 9.2vw;
         }
+        &:hover{
+          color: $orange;
+          transition: $btn-transition;
+        }
+        i {
+          font-size: 35px;
+        }
       }
       .menu-item {
         text-align: right;
         color: #fff;
-        cursor: pointer;
         font-size: 20px;
         margin-bottom: 22px;
         @include tablet {
@@ -114,6 +120,14 @@ header {
           font-size: 30px;
           margin-bottom: 42px;
         }
+        &:hover {
+          color: $orange;
+          transition: $btn-transition;
+        }
+      }
+
+      .active {
+          color: $orange;
       }
     }
   }

@@ -32,10 +32,10 @@
 
         $('.menu-button').click(function() {
           console.log('menu-button click!');
-          $('.menu-block').toggle();
+          $('.menu-block').toggle( 150 );
         });
         $('.menu-block-close-btn').click(function() {
-            $('.menu-block').toggle();
+            $('.menu-block').toggle( 150 );
         });
 
         var swiper = new Swiper('.testimonials-section .content-wrapper .swiper-slider', {
