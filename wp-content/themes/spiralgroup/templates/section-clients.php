@@ -9,28 +9,7 @@
                 $logo = get_sub_field('logo');    
             ?>
         <div class="clients-item">
-          <div class="company-logo company-1" style="background-image: url(<?php echo $logo['sizes']['medium']; ?>); background-size: 60%;">
-            
-          </div>
-          <div class="hover-description">
-            <p class="value">
-              <?php the_sub_field('number_1'); ?>
-            </p>
-            <p class="desc">
-              <?php the_sub_field('number_1_description'); ?>
-            </p>
-            <p class="value">
-              <?php the_sub_field('number_2'); ?>
-            </p>
-            <p class="desc">
-              <?php the_sub_field('number_2_description'); ?>
-            </p>
-            <p class="value">
-              <?php the_sub_field('number_3'); ?>
-            </p>
-            <p class="desc">
-              <?php the_sub_field('number_3_description'); ?>
-            </p>
+          <div class="company-logo company-1" style="background-image: url(<?php echo $logo['sizes']['medium']; ?>); background-size: 60%;">           
           </div>
         </div>
          <?php endwhile; ?>
