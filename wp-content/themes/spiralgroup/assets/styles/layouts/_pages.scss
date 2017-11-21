@@ -105,8 +105,8 @@
           height: $grid-item-height * 0.63;
         }
         @include large-laptop {
-          width: $grid-item-width;
-          height: $grid-item-width;
+          width: $grid-item-width * 1.021;
+          height: $grid-item-width * 1.021;
           margin-top: 0px;
           margin-bottom: 0px;
           margin-left: 0px;
@@ -179,8 +179,8 @@
           margin: 0;
         }
         @include large-laptop {
-          height: $grid-item-width - 20px;
-          width: $grid-item-width - 20px; 
+          height: $grid-item-width * 1.021 - 20px;
+          width: $grid-item-width * 1.021 - 20px; 
           margin: 0;
         }
 }
@@ -207,7 +207,7 @@
           width: $grid-item-width * 1.26;
         }
         @include large-laptop {
-          width: $grid-item-width * 2;
+          width: $grid-item-width * 2.042;
         }
  }
 .grid-item--height2 { height: $grid-item-height * 2;
@@ -232,7 +232,7 @@
           height: $grid-item-height * 1.26;
         }
         @include large-laptop {
-          height: $grid-item-height * 2;
+          height: $grid-item-height * 2.042;
         }
  }
 
@@ -258,7 +258,7 @@
           width: $grid-item-width * 1.26 - 10px;
         }
         @include large-laptop {
-          width: $grid-item-width * 2 - $grid-item-mh * 2;
+          width: $grid-item-width * 2.042 - $grid-item-mh * 2;
         }
  }
 .grid-smaller-item--height2 { height: $grid-item-height * 2 - $grid-item-mh * 2; 
@@ -283,7 +283,7 @@
           height: $grid-item-height * 1.26 - 10px;
         }
         @include large-laptop {
-          height: $grid-item-width * 2 - $grid-item-mh * 2;
+          height: $grid-item-width * 2.042 - $grid-item-mh * 2;
         }
 }
 
