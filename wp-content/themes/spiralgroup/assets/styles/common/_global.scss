@@ -191,8 +191,14 @@ h5, h6 {
   }
 }
 
+@mixin iphone-mobile {
+  @media (min-width: 375px) {
+    @content;
+  }
+}
+
 @mixin extra-large-mobile {
-  @media (min-width: 420px) {
+  @media (min-width: 414px) {
     @content;
   }
 }
