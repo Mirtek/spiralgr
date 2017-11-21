@@ -551,16 +551,20 @@
           width: 360px;
         }
         @include tablet {
-          height: 320px;
-          width: 320px;
+          height: 335px;
+          width: 335px;
+        }
+        @include tablet-landscape {
+          height: 295px;
+          width: 295px;
         }
         @include laptop {
           height: 300px;
           width: 300px;
         }
         @include large-laptop {
-          height: 430px;
-          width: 430px;
+          height: 480px;
+          width: 31.5%;
         }
         @include retina-laptop {
           height: 660px;
