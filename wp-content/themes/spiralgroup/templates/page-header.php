@@ -6,7 +6,7 @@
 	<?php } else {?>
 	<section class="first-section">
 		<?php } ?>
-		<h1 class="content col-xs-10">
+		<h1 class="content col-xs-10 <?php if (is_page() && get_the_title()!="Home") : echo "narrow-header"; endif; ?>">
 			<div class="main-title">
 				<?php $header_type = get_field('header_type') ?>
 				<?php if ($header_type==="default" || empty(get_field('header_type'))) {
