@@ -85,8 +85,8 @@
           height: $grid-item-width;
         }
         @include tablet {
-          width: $grid-item-width * 0.88;
-          height: $grid-item-width * 0.88;
+          width: $grid-item-width * 0.87;
+          height: $grid-item-width * 0.87;
           margin-top: 5px;
           margin-bottom: 5px;
           margin-left: 5px;
@@ -160,8 +160,8 @@
           height: $grid-item-width;
         }
         @include tablet {
-          height: $grid-item-width * 0.88;
-          width: $grid-item-width * 0.88;       
+          height: $grid-item-width * 0.87;
+          width: $grid-item-width * 0.87;       
           background-position: 50% 50%;
           background-repeat: no-repeat;
           margin: 0;
@@ -198,7 +198,7 @@
           width: $grid-item-width;
         }
         @include tablet {
-          width: $grid-item-width * 0.88;
+          width: $grid-item-width * 0.87;
         }
         @include tablet-landscape {
           width: $grid-item-width * 1.16;
@@ -223,7 +223,7 @@
           height: $grid-item-width;
         }
         @include tablet {
-          height: $grid-item-height * 0.88;       
+          height: $grid-item-height * 0.87;       
         }
         @include tablet-landscape {
           height: $grid-item-height * 1.16;
@@ -249,7 +249,7 @@
           width: $grid-item-width;
         }
         @include tablet {
-          width: $grid-item-width * 0.88;
+          width: $grid-item-width * 0.87;
         }
         @include tablet-landscape {
           width: $grid-item-width * 1.16 - 5px;
@@ -274,7 +274,7 @@
           height: $grid-item-width;
         }
         @include tablet {
-          height: $grid-item-height * 0.88;
+          height: $grid-item-height * 0.87;
         }
         @include tablet-landscape {
           height: $grid-item-height * 1.16 - 5px;
