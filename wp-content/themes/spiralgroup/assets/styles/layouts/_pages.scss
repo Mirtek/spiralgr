@@ -113,6 +113,20 @@
           margin-right: 0px;
         }
         @include retina-laptop {
+          width: $grid-item-width * 1.3;
+          height: $grid-item-width * 1.3;
+          margin-top: 0px;
+          margin-bottom: 0px;
+          margin-left: 0px;
+          margin-right: 0px;
+        }
+        @include retina-15-laptop {
+          width: $grid-item-width * 1.47;
+          height: $grid-item-height * 1.47;
+          margin-top: 0px;
+          margin-bottom: 0px;
+          margin-left: 0px;
+          margin-right: 0px;
         }
 }
 
@@ -183,6 +197,20 @@
           width: $grid-item-width - 20px; 
           margin: 0;
         }
+
+        @include retina-laptop {
+          height: $grid-item-width * 1.3 - 20px;
+          width: $grid-item-width * 1.3 - 20px;
+          background-size: 102%; 
+          margin: 0;
+        }
+
+        @include retina-15-laptop {
+          height: $grid-item-height * 1.47 - 20px;
+          width: $grid-item-width * 1.47 - 20px;
+          background-size: 105%; 
+          margin: 0;
+        }
 }
 
 .grid-item--width2 { width: $grid-item-width * 2;
@@ -209,6 +237,12 @@
         @include large-laptop {
           width: $grid-item-width * 2;
         }
+        @include retina-laptop {
+          width: $grid-item-width * 2.6;
+        }
+        @include retina-15-laptop {
+          width: $grid-item-width * 2.94;
+        }
  }
 .grid-item--height2 { height: $grid-item-height * 2;
      @include mobile {
@@ -233,6 +267,12 @@
         }
         @include large-laptop {
           height: $grid-item-height * 2;
+        }
+        @include retina-laptop {
+          height: $grid-item-height * 2.6;
+        }
+        @include retina-15-laptop {
+          height: $grid-item-height * 2.94;
         }
  }
 
@@ -260,6 +300,12 @@
         @include large-laptop {
           width: $grid-item-width * 2 - $grid-item-mh * 2;
         }
+        @include retina-laptop {
+          width: $grid-item-width * 2.6 - $grid-item-mh * 2;
+        }
+        @include retina-15-laptop {
+          width: $grid-item-width * 2.94 - $grid-item-mh * 2;
+        }
  }
 .grid-smaller-item--height2 { height: $grid-item-height * 2 - $grid-item-mh * 2; 
         @include mobile {
@@ -284,6 +330,12 @@
         }
         @include large-laptop {
           height: $grid-item-width * 2 - $grid-item-mh * 2;
+        }
+        @include retina-laptop {
+          height: $grid-item-width * 2.6 - $grid-item-mh * 2;
+        }
+        @include retina-15-laptop {
+          height: $grid-item-height * 2.94 - $grid-item-mh * 2;
         }
 }
 
@@ -323,6 +375,9 @@
   @include tablet {
     font-size: 2.8vw;
     padding: 3vw 2vw;
+  }
+  @include retina-laptop {
+    font-size: 2.4vw;
   }
   padding: 3vw 2vw;
 }
@@ -619,6 +674,11 @@
           height: 660px;
           width: 660px;
         }
+
+        @include retina-15-laptop {
+          height: 720px;
+          width: 720px;
+        }
     
         .company-logo {
           width: 100%;
@@ -845,5 +905,5 @@ h2.entry-title {
 }
 
 .narrow-header {
-  min-height: 45% !important;
+  min-height: 30% !important;
 }

@@ -227,7 +227,13 @@ h5, h6 {
   }
 }
 @mixin retina-laptop {
-  @media (min-width: 2560px) {
+  @media (min-width: 2500px) {
+    @content;
+  }
+}
+
+@mixin retina-15-laptop {
+  @media (min-width: 2800px) {
     @content;
   }
 }
